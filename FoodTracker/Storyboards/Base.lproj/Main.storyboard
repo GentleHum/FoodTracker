@@ -45,6 +45,9 @@
                                     <segment title="Grain"/>
                                     <segment title="Meat"/>
                                     <segment title="Fruit"/>
+                                    <segment title="Dairy"/>
+                                    <segment title="Alc"/>
+                                    <segment title="Nut"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -110,7 +113,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GFCF:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sP-iL-tMo">
-                                <rect key="frame" x="8" y="72" width="39" height="16"/>
+                                <rect key="frame" x="8" y="72" width="359" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="t79-iF-lOM"/>
                                 </constraints>
@@ -188,6 +191,7 @@
                             <constraint firstItem="Zud-t6-A6x" firstAttribute="top" secondItem="Kov-3b-21t" secondAttribute="bottom" constant="12" id="9vz-x2-KNI"/>
                             <constraint firstItem="eFw-dV-hMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="C2d-WF-LRJ"/>
                             <constraint firstItem="Zud-t6-A6x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="DGd-PX-0Q6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sP-iL-tMo" secondAttribute="trailing" constant="8" id="IOl-zk-Asg"/>
                             <constraint firstItem="CGQ-ZK-DEw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Ic6-MC-FCS"/>
                             <constraint firstItem="uPm-l9-sIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="MTd-yo-hZT"/>
                             <constraint firstItem="CGQ-ZK-DEw" firstAttribute="top" secondItem="w1J-Xx-mfz" secondAttribute="bottom" constant="8" id="MfO-wS-bVS"/>

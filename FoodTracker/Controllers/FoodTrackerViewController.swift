@@ -14,7 +14,8 @@ final class FoodTrackerViewController: UIViewController {
     let gfcfValues: [GFCFStatus] = [ .all, .yes, .no, .checkDiet ]
     let scdValues: [SCDStatus] = [ .all, .yes, .no, .checkDiet ]
     let salicylateValues: [SalicylateContent] = [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let categoryValues: [FoodCategory] = [.all, .vegetable, .grain, .meat, .fruit]
+    let categoryValues: [FoodCategory] =
+        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
 
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
 

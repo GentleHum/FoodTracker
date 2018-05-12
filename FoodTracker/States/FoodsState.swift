@@ -38,6 +38,10 @@ struct FoodsState: StateType {
                      salicylateContent: .veryHigh, category: .fruit),
             FoodItem(name: "Olives, Black", oxalateContent: .veryHigh, gfcfStatus: .yes, scdStatus: .yes,
                      salicylateContent: .moderate, category: .vegetable),
+            FoodItem(name: "Bok Choy", oxalateContent: .veryLow, gfcfStatus: .yes, scdStatus: .yes,
+                     salicylateContent: .unknown, category: .vegetable),
+            FoodItem(name: "Bourbon", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .yes,
+                 salicylateContent: .unknown, category: .alcohol),
         ]
     }
 }
