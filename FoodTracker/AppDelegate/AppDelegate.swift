@@ -6,7 +6,7 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import UIKit
+import ReSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
