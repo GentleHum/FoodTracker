@@ -6,4 +6,11 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import Foundation
+import ReSwift
+
+struct AppState: StateType {
+    let routingState: RoutingState
+    let foodsState: FoodsState
+    let searchCriteriaState: SearchCriteriaState
+}
+

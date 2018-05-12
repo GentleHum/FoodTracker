@@ -6,4 +6,9 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import Foundation
+import ReSwift
+
+func foodsReducer(action: Action, state: FoodsState?) -> FoodsState {
+    let state = state ?? FoodsState()
+    return state
+}

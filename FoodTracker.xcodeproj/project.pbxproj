@@ -7,12 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D847167F58558B48BF4A6FBB /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */; };
 		E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780D209758BE00C2B17B /* AppDelegate.swift */; };
-		E0417810209758BE00C2B17B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* ViewController.swift */; };
+		E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */; };
 		E0417813209758BE00C2B17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417811209758BE00C2B17B /* Main.storyboard */; };
 		E0417815209758BF00C2B17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0417814209758BF00C2B17B /* Assets.xcassets */; };
 		E0417818209758BF00C2B17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417816209758BF00C2B17B /* LaunchScreen.storyboard */; };
 		E0417823209758BF00C2B17B /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0417822209758BF00C2B17B /* FoodTrackerTests.swift */; };
+		E04178372097648D00C2B17B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178362097648D00C2B17B /* AppState.swift */; };
+		E0417839209764D700C2B17B /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0417838209764D700C2B17B /* AppReducer.swift */; };
+		E041783C2097694600C2B17B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041783B2097694600C2B17B /* AppRouter.swift */; };
+		E041783E209769CD00C2B17B /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041783D209769CD00C2B17B /* RoutingState.swift */; };
+		E041784120976AC400C2B17B /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041784020976AC400C2B17B /* RoutingReducer.swift */; };
+		E04178442097810300C2B17B /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178432097810300C2B17B /* TableDataSource.swift */; };
+		E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178452097812400C2B17B /* CollectionDataSource.swift */; };
+		E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178472097F55500C2B17B /* SearchCriteriaState.swift */; };
+		E041784A2097F6F200C2B17B /* SearchCriteriaReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */; };
+		E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */; };
+		E07D506E209A138300FB9624 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506D209A138300FB9624 /* FoodItem.swift */; };
+		E07D5070209A13CE00FB9624 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506F209A13CE00FB9624 /* FoodCategory.swift */; };
+		E07D5072209A266600FB9624 /* FoodsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5071209A266600FB9624 /* FoodsState.swift */; };
+		E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5073209A283000FB9624 /* FoodsReducer.swift */; };
+		E07D5076209D121900FB9624 /* GFCFStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5075209D121900FB9624 /* GFCFStatus.swift */; };
+		E07D5078209F7ABF00FB9624 /* OxalateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5077209F7ABF00FB9624 /* OxalateContent.swift */; };
+		E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5079209F817300FB9624 /* SCDStatus.swift */; };
+		E07D507C209F84AC00FB9624 /* SalicylateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D507B209F84AC00FB9624 /* SalicylateContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1278E5DDDF666149D7D84B06 /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E041780A209758BE00C2B17B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E041780D209758BE00C2B17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E041780F209758BE00C2B17B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
 		E0417812209758BE00C2B17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0417814209758BF00C2B17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0417817209758BF00C2B17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +57,25 @@
 		E041781E209758BF00C2B17B /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0417822209758BF00C2B17B /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		E0417824209758BF00C2B17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04178362097648D00C2B17B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E0417838209764D700C2B17B /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		E041783B2097694600C2B17B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E041783D209769CD00C2B17B /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
+		E041784020976AC400C2B17B /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
+		E04178432097810300C2B17B /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		E04178452097812400C2B17B /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		E04178472097F55500C2B17B /* SearchCriteriaState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaState.swift; sourceTree = "<group>"; };
+		E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaReducer.swift; sourceTree = "<group>"; };
+		E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaAction.swift; sourceTree = "<group>"; };
+		E07D506D209A138300FB9624 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		E07D506F209A13CE00FB9624 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		E07D5071209A266600FB9624 /* FoodsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsState.swift; sourceTree = "<group>"; };
+		E07D5073209A283000FB9624 /* FoodsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsReducer.swift; sourceTree = "<group>"; };
+		E07D5075209D121900FB9624 /* GFCFStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCFStatus.swift; sourceTree = "<group>"; };
+		E07D5077209F7ABF00FB9624 /* OxalateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxalateContent.swift; sourceTree = "<group>"; };
+		E07D5079209F817300FB9624 /* SCDStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDStatus.swift; sourceTree = "<group>"; };
+		E07D507B209F84AC00FB9624 /* SalicylateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalicylateContent.swift; sourceTree = "<group>"; };
+		EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D847167F58558B48BF4A6FBB /* Pods_FoodTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +97,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2950D340EC9B4CF49047E009 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */,
+				1278E5DDDF666149D7D84B06 /* Pods-FoodTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AA0BAED2465B688316A7735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0417801209758BE00C2B17B = {
 			isa = PBXGroup;
 			children = (
 				E041780C209758BE00C2B17B /* FoodTracker */,
 				E0417821209758BF00C2B17B /* FoodTrackerTests */,
+				5AA0BAED2465B688316A7735 /* Frameworks */,
+				2950D340EC9B4CF49047E009 /* Pods */,
 				E041780B209758BE00C2B17B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,12 +137,17 @@
 		E041780C209758BE00C2B17B /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E041780D209758BE00C2B17B /* AppDelegate.swift */,
-				E041780F209758BE00C2B17B /* ViewController.swift */,
-				E0417811209758BE00C2B17B /* Main.storyboard */,
-				E0417814209758BF00C2B17B /* Assets.xcassets */,
-				E0417816209758BF00C2B17B /* LaunchScreen.storyboard */,
-				E0417819209758BF00C2B17B /* Info.plist */,
+				E04178302097591600C2B17B /* Actions */,
+				E0417834209759C500C2B17B /* AppDelegate */,
+				E041782D209758FC00C2B17B /* Controllers */,
+				E0417842209780C300C2B17B /* DataSources */,
+				E041782F2097591000C2B17B /* Models */,
+				E04178312097592000C2B17B /* Reducers */,
+				E04178332097593C00C2B17B /* Resources */,
+				E041783A2097692D00C2B17B /* Routers */,
+				E04178352097647600C2B17B /* States */,
+				E04178322097592F00C2B17B /* Storyboards */,
+				E041782E2097590700C2B17B /* Views */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -96,6 +161,107 @@
 			path = FoodTrackerTests;
 			sourceTree = "<group>";
 		};
+		E041782D209758FC00C2B17B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E041782E2097590700C2B17B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E041782F2097591000C2B17B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E07D506D209A138300FB9624 /* FoodItem.swift */,
+				E07D506F209A13CE00FB9624 /* FoodCategory.swift */,
+				E07D5075209D121900FB9624 /* GFCFStatus.swift */,
+				E07D5077209F7ABF00FB9624 /* OxalateContent.swift */,
+				E07D5079209F817300FB9624 /* SCDStatus.swift */,
+				E07D507B209F84AC00FB9624 /* SalicylateContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E04178302097591600C2B17B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		E04178312097592000C2B17B /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				E0417838209764D700C2B17B /* AppReducer.swift */,
+				E041784020976AC400C2B17B /* RoutingReducer.swift */,
+				E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */,
+				E07D5073209A283000FB9624 /* FoodsReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		E04178322097592F00C2B17B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E0417816209758BF00C2B17B /* LaunchScreen.storyboard */,
+				E0417811209758BE00C2B17B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E04178332097593C00C2B17B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0417814209758BF00C2B17B /* Assets.xcassets */,
+				E0417819209758BF00C2B17B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0417834209759C500C2B17B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E041780D209758BE00C2B17B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E04178352097647600C2B17B /* States */ = {
+			isa = PBXGroup;
+			children = (
+				E04178362097648D00C2B17B /* AppState.swift */,
+				E07D5071209A266600FB9624 /* FoodsState.swift */,
+				E041783D209769CD00C2B17B /* RoutingState.swift */,
+				E04178472097F55500C2B17B /* SearchCriteriaState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		E041783A2097692D00C2B17B /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				E041783B2097694600C2B17B /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		E0417842209780C300C2B17B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				E04178452097812400C2B17B /* CollectionDataSource.swift */,
+				E04178432097810300C2B17B /* TableDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0417827209758BF00C2B17B /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
+				D36FC582B291B849541C5EBD /* [CP] Check Pods Manifest.lock */,
 				E0417806209758BE00C2B17B /* Sources */,
 				E0417807209758BE00C2B17B /* Frameworks */,
 				E0417808209758BE00C2B17B /* Resources */,
+				B4674CEBEC73E2E8E5B61FF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +360,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4674CEBEC73E2E8E5B61FF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36FC582B291B849541C5EBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0417806209758BE00C2B17B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0417810209758BE00C2B17B /* ViewController.swift in Sources */,
+				E07D507C209F84AC00FB9624 /* SalicylateContent.swift in Sources */,
+				E041783E209769CD00C2B17B /* RoutingState.swift in Sources */,
+				E04178372097648D00C2B17B /* AppState.swift in Sources */,
+				E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */,
+				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
+				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
+				E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */,
+				E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */,
+				E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */,
+				E04178442097810300C2B17B /* TableDataSource.swift in Sources */,
+				E07D5078209F7ABF00FB9624 /* OxalateContent.swift in Sources */,
+				E0417839209764D700C2B17B /* AppReducer.swift in Sources */,
+				E041784120976AC400C2B17B /* RoutingReducer.swift in Sources */,
+				E07D506E209A138300FB9624 /* FoodItem.swift in Sources */,
+				E041784A2097F6F200C2B17B /* SearchCriteriaReducer.swift in Sources */,
+				E07D5070209A13CE00FB9624 /* FoodCategory.swift in Sources */,
+				E041783C2097694600C2B17B /* AppRouter.swift in Sources */,
+				E07D5072209A266600FB9624 /* FoodsState.swift in Sources */,
 				E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */,
+				E07D5076209D121900FB9624 /* GFCFStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +581,12 @@
 		};
 		E0417828209758BF00C2B17B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNR8436L9N;
-				INFOPLIST_FILE = FoodTracker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FoodTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +600,12 @@
 		};
 		E0417829209758BF00C2B17B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1278E5DDDF666149D7D84B06 /* Pods-FoodTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNR8436L9N;
-				INFOPLIST_FILE = FoodTracker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FoodTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

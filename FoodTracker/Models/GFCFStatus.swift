@@ -6,4 +6,11 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import Foundation
+import ReSwift
+
+enum GFCFStatus: String {
+    case all = "All"
+    case yes = "Yes"
+    case no = "No"
+    case checkDiet = "Check Diet"
+}

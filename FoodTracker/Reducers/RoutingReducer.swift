@@ -6,4 +6,9 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import Foundation
+import ReSwift
+
+func routingReducer(action: Action, state: RoutingState?) -> RoutingState {
+    let state = state ?? RoutingState()
+    return state
+}
