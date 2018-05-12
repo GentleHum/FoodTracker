@@ -26,6 +26,8 @@ struct FoodsState: StateType {
                      salicylateContent: .unknown, category: .supplement),
             FoodItem(name: "Amaranth", oxalateContent: .high, gfcfStatus: .yes, scdStatus: .no,
                      salicylateContent: .unknown, category: .grain),
+            FoodItem(name: "Anchovies", oxalateContent: .unknown, gfcfStatus: .yes, scdStatus: .yes,
+                     salicylateContent: .unknown, category: .meat),
             FoodItem(name: "Asiago cheese", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .no,
                      salicylateContent: .negligible, category: .dairy),
             FoodItem(name: "Beef", oxalateContent: .negligible, gfcfStatus: .yes, scdStatus: .yes,
