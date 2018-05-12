@@ -30,8 +30,12 @@ struct FoodsState: StateType {
                      salicylateContent: .unknown, category: .meat),
             FoodItem(name: "Asiago cheese", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .no,
                      salicylateContent: .negligible, category: .dairy),
+            FoodItem(name: "Asparagus", oxalateContent: .low, gfcfStatus: .yes, scdStatus: .yes,
+                     salicylateContent: .moderate, category: .vegetable),
             FoodItem(name: "Beef", oxalateContent: .negligible, gfcfStatus: .yes, scdStatus: .yes,
                      salicylateContent: .negligible, category: .meat),
+            FoodItem(name: "Beets", oxalateContent: .veryHigh, gfcfStatus: .yes, scdStatus: .yes,
+                     salicylateContent: .moderate, category: .vegetable),
             FoodItem(name: "Blackberries", oxalateContent: .veryHigh, gfcfStatus: .yes, scdStatus: .yes,
                      salicylateContent: .veryHigh, category: .fruit),
             FoodItem(name: "Blueberries", oxalateContent: .unknown, gfcfStatus: .yes, scdStatus: .yes,
@@ -42,6 +46,15 @@ struct FoodsState: StateType {
                      salicylateContent: .unknown, category: .vegetable),
             FoodItem(name: "Bourbon", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .yes,
                  salicylateContent: .unknown, category: .alcohol),
+            FoodItem(name: "Brandy", oxalateContent: .unknown, gfcfStatus: .yes, scdStatus: .no,
+                     salicylateContent: .high, category: .alcohol),
+            FoodItem(name: "Brazil Nuts", oxalateContent: .unknown, gfcfStatus: .yes, scdStatus: .yes,
+                     salicylateContent: .high, category: .nut),
+            FoodItem(name: "Brick cheese", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .yes,
+                     salicylateContent: .negligible, category: .dairy),
+            FoodItem(name: "Brie cheese", oxalateContent: .unknown, gfcfStatus: .no, scdStatus: .yes,
+                     salicylateContent: .negligible, category: .dairy),
+
         ]
     }
 }
