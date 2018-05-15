@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D847167F58558B48BF4A6FBB /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */; };
+		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
+		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
 		E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780D209758BE00C2B17B /* AppDelegate.swift */; };
 		E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */; };
 		E0417813209758BE00C2B17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417811209758BE00C2B17B /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178452097812400C2B17B /* CollectionDataSource.swift */; };
 		E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178472097F55500C2B17B /* SearchCriteriaState.swift */; };
 		E041784A2097F6F200C2B17B /* SearchCriteriaReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */; };
+		E06812D520AA3002006E982A /* UITableView+RealmChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06812D420AA3002006E982A /* UITableView+RealmChanges.swift */; };
+		E06812D720AA3040006E982A /* UserInputAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06812D620AA3040006E982A /* UserInputAlert.swift */; };
 		E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */; };
 		E07D506E209A138300FB9624 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506D209A138300FB9624 /* FoodItem.swift */; };
 		E07D5070209A13CE00FB9624 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506F209A13CE00FB9624 /* FoodCategory.swift */; };
@@ -47,6 +51,8 @@
 /* Begin PBXFileReference section */
 		1278E5DDDF666149D7D84B06 /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01D588D20A9F88A002A6D6C /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
+		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		E041780A209758BE00C2B17B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E041780D209758BE00C2B17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 		E04178452097812400C2B17B /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		E04178472097F55500C2B17B /* SearchCriteriaState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaState.swift; sourceTree = "<group>"; };
 		E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaReducer.swift; sourceTree = "<group>"; };
+		E06812D420AA3002006E982A /* UITableView+RealmChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RealmChanges.swift"; sourceTree = "<group>"; };
+		E06812D620AA3040006E982A /* UserInputAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputAlert.swift; sourceTree = "<group>"; };
 		E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaAction.swift; sourceTree = "<group>"; };
 		E07D506D209A138300FB9624 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		E07D506F209A13CE00FB9624 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
@@ -114,6 +122,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E01D588C20A9F866002A6D6C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				E01D588D20A9F88A002A6D6C /* Persistor.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		E022025220AA2D70002C0A60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E022025320AA2D8C002C0A60 /* Path.swift */,
+				E06812D420AA3002006E982A /* UITableView+RealmChanges.swift */,
+				E06812D620AA3040006E982A /* UserInputAlert.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		E0417801209758BE00C2B17B = {
 			isa = PBXGroup;
 			children = (
@@ -139,9 +165,11 @@
 			children = (
 				E04178302097591600C2B17B /* Actions */,
 				E0417834209759C500C2B17B /* AppDelegate */,
+				E022025220AA2D70002C0A60 /* Classes */,
 				E041782D209758FC00C2B17B /* Controllers */,
 				E0417842209780C300C2B17B /* DataSources */,
 				E041782F2097591000C2B17B /* Models */,
+				E01D588C20A9F866002A6D6C /* Persistence */,
 				E04178312097592000C2B17B /* Reducers */,
 				E04178332097593C00C2B17B /* Resources */,
 				E041783A2097692D00C2B17B /* Routers */,
@@ -369,10 +397,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -411,11 +443,14 @@
 				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
 				E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */,
+				E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */,
 				E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */,
 				E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */,
 				E04178442097810300C2B17B /* TableDataSource.swift in Sources */,
 				E07D5078209F7ABF00FB9624 /* OxalateContent.swift in Sources */,
+				E022025420AA2D8C002C0A60 /* Path.swift in Sources */,
 				E0417839209764D700C2B17B /* AppReducer.swift in Sources */,
+				E06812D720AA3040006E982A /* UserInputAlert.swift in Sources */,
 				E041784120976AC400C2B17B /* RoutingReducer.swift in Sources */,
 				E07D506E209A138300FB9624 /* FoodItem.swift in Sources */,
 				E041784A2097F6F200C2B17B /* SearchCriteriaReducer.swift in Sources */,
@@ -424,6 +459,7 @@
 				E07D5072209A266600FB9624 /* FoodsState.swift in Sources */,
 				E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */,
 				E07D5076209D121900FB9624 /* GFCFStatus.swift in Sources */,
+				E06812D520AA3002006E982A /* UITableView+RealmChanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

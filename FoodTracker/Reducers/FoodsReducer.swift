@@ -9,6 +9,7 @@
 import ReSwift
 
 func foodsReducer(action: Action, state: FoodsState?) -> FoodsState {
-    let state = state ?? FoodsState()
+    var state = state ?? FoodsState()
+    state.foodItems = FoodItem.allAsArray()
     return state
 }
