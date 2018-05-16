@@ -18,4 +18,8 @@ enum SalicylateContent: String {
     case high = "H"
     case veryHigh = "VH"
     case varies = "Var"
+    
+    func description() -> String {
+        return self.rawValue
+    }
 }

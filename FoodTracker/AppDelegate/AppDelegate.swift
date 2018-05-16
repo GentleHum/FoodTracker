@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initializeRealm() {
         let realm = try! Realm()
         let fileURL = realm.configuration.fileURL ?? URL(fileURLWithPath: "file:///default.realm")
-        print("fileURL: \(fileURL))")  // zap
+        print("fileURL: \(fileURL)")  // zap
         
         guard realm.isEmpty else { return }
         

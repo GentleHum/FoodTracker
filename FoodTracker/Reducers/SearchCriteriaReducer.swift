@@ -22,13 +22,13 @@ fileprivate func apply(_ criteria: SearchCriteriaState, to foodItems: [FoodItem]
     if criteria.scdStatus != .all {
         filteredItems = filteredItems.filter { $0.scdStatus == criteria.scdStatus }
     }
-
-    if criteria.foodCategory != .all {
-        filteredItems = filteredItems.filter { $0.category == criteria.foodCategory }
-    }
     
     if criteria.salicylateContent != .all {
         filteredItems = filteredItems.filter { $0.salicylateContent == criteria.salicylateContent }
+    }
+    
+    if criteria.foodCategory != .all {
+        filteredItems = filteredItems.filter { $0.category == criteria.foodCategory }
     }
     
     if !criteria.foodName.isEmpty {

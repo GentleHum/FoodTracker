@@ -36,6 +36,7 @@
 		E07D5078209F7ABF00FB9624 /* OxalateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5077209F7ABF00FB9624 /* OxalateContent.swift */; };
 		E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5079209F817300FB9624 /* SCDStatus.swift */; };
 		E07D507C209F84AC00FB9624 /* SalicylateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D507B209F84AC00FB9624 /* SalicylateContent.swift */; };
+		E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		E07D5077209F7ABF00FB9624 /* OxalateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxalateContent.swift; sourceTree = "<group>"; };
 		E07D5079209F817300FB9624 /* SCDStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDStatus.swift; sourceTree = "<group>"; };
 		E07D507B209F84AC00FB9624 /* SalicylateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalicylateContent.swift; sourceTree = "<group>"; };
+		E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 			children = (
 				E04178302097591600C2B17B /* Actions */,
 				E0417834209759C500C2B17B /* AppDelegate */,
+				E0C0074420AC6EB900BC330E /* Cells */,
 				E022025220AA2D70002C0A60 /* Classes */,
 				E041782D209758FC00C2B17B /* Controllers */,
 				E0417842209780C300C2B17B /* DataSources */,
@@ -288,6 +291,14 @@
 				E04178432097810300C2B17B /* TableDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		E0C0074420AC6EB900BC330E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +454,7 @@
 				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
 				E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */,
+				E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */,
 				E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */,
 				E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */,
 				E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */,

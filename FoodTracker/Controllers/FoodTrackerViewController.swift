@@ -10,6 +10,8 @@ import ReSwift
 
 final class FoodTrackerViewController: UIViewController {
     
+    let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
+    
     let oxalateValues: [OxalateContent] = [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let gfcfValues: [GFCFStatus] = [ .all, .yes, .no, .checkDiet ]
     let scdValues: [SCDStatus] = [ .all, .yes, .no, .checkDiet ]
@@ -68,13 +70,18 @@ final class FoodTrackerViewController: UIViewController {
         tableView.delegate = self
         
         tableDataSource = TableDataSource(cellIdentifier:"FoodItemCell", models: []) {cell, model in
-            cell.textLabel?.text = model.name
-            cell.textLabel?.textAlignment = .center
+            
+            if let foodItemCell = cell as? FoodItemTableViewCell {
+                foodItemCell.configureCell(with: model)
+            }
+            
             return cell
         }
         
         tableView.dataSource = tableDataSource
+        tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
+        self.title = "Restore Health Now"
     }
 
 }
@@ -89,5 +96,13 @@ extension FoodTrackerViewController: StoreSubscriber {
 
 // MARK: - Table View Delegate
 extension FoodTrackerViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(60.0)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = cellColors[indexPath.row % 2]
+    }
 }
 

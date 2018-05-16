@@ -23,6 +23,10 @@ enum FoodCategory: String {
     case supplement = "Supplement"
     case sweetener = "Sweetener"
     case vegetable = "Vegetable"
+    
+    func description() -> String {
+        return self.rawValue
+    }
 }
 
 

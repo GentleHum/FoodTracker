@@ -79,7 +79,7 @@ extension FoodItem {
         for foodItem in FoodItem.all(in: realm) {
             returnArray.append(foodItem)
         }
-        
+                
         return returnArray
     }
     
