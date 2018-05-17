@@ -10,6 +10,7 @@ import ReSwift
 
 enum RoutingDestination: String {
     case main = "FoodTrackerViewController"
+    case foodItemDetail = "FoodItemDetailViewController"
 }
 
 final class AppRouter {
@@ -47,6 +48,7 @@ final class AppRouter {
 
 extension AppRouter: StoreSubscriber {
     func newState(state: RoutingState) {
+        print("AppRouter: newState: \(state.navigationState.rawValue)")  // zap
         let shouldAnimate = navigationController.topViewController != nil
         pushViewController(identifier: state.navigationState.rawValue, animated: shouldAnimate)
     }

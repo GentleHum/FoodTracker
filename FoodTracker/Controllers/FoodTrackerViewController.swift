@@ -61,6 +61,7 @@ final class FoodTrackerViewController: UIViewController {
             }
         }
         
+        store.dispatch(RoutingAction(destination: .main))
         store.dispatch(SearchCriteriaAction())
     }
     
@@ -87,7 +88,10 @@ final class FoodTrackerViewController: UIViewController {
         tableView.dataSource = tableDataSource
         tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         self.title = Storyboard.title
+        
     }
 
 }
@@ -97,6 +101,14 @@ extension FoodTrackerViewController: StoreSubscriber {
     func newState(state: SearchCriteriaState) {
         tableDataSource?.models = state.matchingItems
         tableView.reloadData()
+        
+        // scroll to top AFTER table is reloaded (only if table is not empty)
+        DispatchQueue.main.async {
+            if self.tableView.numberOfRows(inSection: 0) > 0 {
+                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0),
+                                           at: .top, animated: true)
+            }
+        }
     }
 }
 
@@ -109,6 +121,15 @@ extension FoodTrackerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = cellColors[indexPath.row % 2]
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected row: \(indexPath.row)")  // zap
+        store.dispatch(RoutingAction(destination: .foodItemDetail))
+        if let foodItem = tableDataSource?.models[indexPath.row] {
+            store.dispatch(FoodItemDetailAction(foodItem: foodItem))
+        }
+
     }
 }
 

@@ -6,7 +6,6 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import UIKit
 import ReSwift
 import RealmSwift
 

@@ -12,6 +12,7 @@ func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         routingState: routingReducer(action: action, state: state?.routingState),
         foodsState: foodsReducer(action: action, state: state?.foodsState),
-        searchCriteriaState: searchCriteriaReducer(action: action, state: state?.searchCriteriaState))
+        searchCriteriaState: searchCriteriaReducer(action: action, state: state?.searchCriteriaState),
+        foodItemDetailState: foodItemDetailReducer(action: action, state: state?.foodItemDetailState))
 }
 
