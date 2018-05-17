@@ -117,7 +117,6 @@
                                     <segment title="All"/>
                                     <segment title="Yes"/>
                                     <segment title="No"/>
-                                    <segment title="Check diet"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -220,7 +219,6 @@
                                     <segment title="All"/>
                                     <segment title="Yes"/>
                                     <segment title="No"/>
-                                    <segment title="Check diet"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>

@@ -16,11 +16,13 @@ final class FoodItemTableViewCell: UITableViewCell {
     func configureCell(with foodItem: FoodItem) {
         self.nameLabel.text = foodItem.name
         self.categoryLabel.text = foodItem.category.description()
+        
         self.valuesLabel.text =
             "Oxalate: \(foodItem.oxalateContent.description())" +
             ", GFCF: \(foodItem.gfcfStatus.description())" +
             ", SCD: \(foodItem.scdStatus.description())" +
             ", Salicylate: \(foodItem.salicylateContent.description())"
+        
         self.valuesLabel.textAlignment = .left
     }
 }

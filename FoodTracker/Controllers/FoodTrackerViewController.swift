@@ -9,13 +9,19 @@
 import ReSwift
 
 final class FoodTrackerViewController: UIViewController {
+    private struct Storyboard {
+        static let cellIdentifier = "FoodItemCell"
+        static let title = "Restore Health Now"
+    }
     
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
     
-    let oxalateValues: [OxalateContent] = [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let gfcfValues: [GFCFStatus] = [ .all, .yes, .no, .checkDiet ]
-    let scdValues: [SCDStatus] = [ .all, .yes, .no, .checkDiet ]
-    let salicylateValues: [SalicylateContent] = [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
+    let oxalateValues: [OxalateContent] =
+        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
+    let gfcfValues: [GFCFStatus] = [ .all, .yes, .no ]
+    let scdValues: [SCDStatus] = [ .all, .yes, .no ]
+    let salicylateValues: [SalicylateContent] =
+        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let categoryValues: [FoodCategory] =
         [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
 
@@ -69,7 +75,7 @@ final class FoodTrackerViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         
-        tableDataSource = TableDataSource(cellIdentifier:"FoodItemCell", models: []) {cell, model in
+        tableDataSource = TableDataSource(cellIdentifier: Storyboard.cellIdentifier, models: []) {cell, model in
             
             if let foodItemCell = cell as? FoodItemTableViewCell {
                 foodItemCell.configureCell(with: model)
@@ -81,7 +87,7 @@ final class FoodTrackerViewController: UIViewController {
         tableView.dataSource = tableDataSource
         tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
-        self.title = "Restore Health Now"
+        self.title = Storyboard.title
     }
 
 }

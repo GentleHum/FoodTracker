@@ -12,7 +12,6 @@ enum SCDStatus: String {
     case all = "All"
     case yes = "Yes"
     case no = "No"
-    case checkDiet = "Check Diet"
     
     func description() -> String {
         return self.rawValue
