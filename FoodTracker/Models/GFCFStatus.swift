@@ -16,4 +16,9 @@ enum GFCFStatus: String {
     func description() -> String {
         return self.rawValue
     }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        return self.rawValue == GFCFStatus.all.rawValue ? foodItems :
+            foodItems.filter{ $0.gfcfStatus.rawValue == self.rawValue }
+    }
 }

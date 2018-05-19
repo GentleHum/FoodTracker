@@ -22,4 +22,9 @@ enum SalicylateContent: String {
     func description() -> String {
         return self.rawValue
     }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        return self.rawValue == SalicylateContent.all.rawValue ? foodItems :
+            foodItems.filter{ $0.salicylateContent.rawValue == self.rawValue }
+    }
 }

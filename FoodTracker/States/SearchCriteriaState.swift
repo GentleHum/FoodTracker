@@ -29,28 +29,13 @@ struct SearchCriteriaState: StateType {
     }
     
     func apply(to foodItems: [FoodItem]) -> [FoodItem] {
-        var filteredItems = foodItems
+        var filteredItems = oxalateContent.apply(to: foodItems)
         
-        if self.oxalateContent != .all {
-            filteredItems = filteredItems.filter { $0.oxalateContent == self.oxalateContent }
-        }
-        
-        if self.gfcfStatus != .all {
-            filteredItems = filteredItems.filter { $0.gfcfStatus == self.gfcfStatus }
-        }
-        
-        if self.scdStatus != .all {
-            filteredItems = filteredItems.filter { $0.scdStatus == self.scdStatus }
-        }
-        
-        if self.salicylateContent != .all {
-            filteredItems = filteredItems.filter { $0.salicylateContent == self.salicylateContent }
-        }
-        
-        if self.foodCategory != .all {
-            filteredItems = filteredItems.filter { $0.category == self.foodCategory }
-        }
-        
+        filteredItems = gfcfStatus.apply(to: filteredItems)
+        filteredItems = scdStatus.apply(to: filteredItems)
+        filteredItems = salicylateContent.apply(to: filteredItems)
+        filteredItems = foodCategory.apply(to: filteredItems)
+
         if !self.foodName.isEmpty {
             filteredItems = filteredItems.filter { $0.name.uppercased().contains(self.foodName.uppercased()) }
         }

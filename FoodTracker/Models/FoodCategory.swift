@@ -27,6 +27,11 @@ enum FoodCategory: String {
     func description() -> String {
         return self.rawValue
     }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        return self.rawValue == FoodCategory.all.rawValue ? foodItems :
+            foodItems.filter{ $0.category.rawValue == self.rawValue }
+    }
 }
 
 

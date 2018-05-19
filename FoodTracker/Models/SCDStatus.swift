@@ -16,4 +16,9 @@ enum SCDStatus: String {
     func description() -> String {
         return self.rawValue
     }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        return self.rawValue == SCDStatus.all.rawValue ? foodItems :
+            foodItems.filter{ $0.scdStatus.rawValue == self.rawValue }
+    }
 }

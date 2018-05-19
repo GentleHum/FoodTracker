@@ -22,4 +22,9 @@ enum OxalateContent: String {
     func description() -> String {
         return self.rawValue
     }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        return self.rawValue == OxalateContent.all.rawValue ? foodItems :
+            foodItems.filter{ $0.oxalateContent.rawValue == self.rawValue }
+    }
 }
