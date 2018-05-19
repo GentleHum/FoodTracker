@@ -27,7 +27,7 @@
 		E041784A2097F6F200C2B17B /* SearchCriteriaReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */; };
 		E06812D520AA3002006E982A /* UITableView+RealmChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06812D420AA3002006E982A /* UITableView+RealmChanges.swift */; };
 		E06812D720AA3040006E982A /* UserInputAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06812D620AA3040006E982A /* UserInputAlert.swift */; };
-		E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */; };
+		E07D506C209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506B209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift */; };
 		E07D506E209A138300FB9624 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506D209A138300FB9624 /* FoodItem.swift */; };
 		E07D5070209A13CE00FB9624 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D506F209A13CE00FB9624 /* FoodCategory.swift */; };
 		E07D5072209A266600FB9624 /* FoodsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D5071209A266600FB9624 /* FoodsState.swift */; };
@@ -38,10 +38,9 @@
 		E07D507C209F84AC00FB9624 /* SalicylateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D507B209F84AC00FB9624 /* SalicylateContent.swift */; };
 		E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */; };
 		E0C0074820ADE7BA00BC330E /* FoodItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074720ADE7BA00BC330E /* FoodItemDetailViewController.swift */; };
-		E0C0074A20ADE96F00BC330E /* FoodItemDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074920ADE96F00BC330E /* FoodItemDetailState.swift */; };
-		E0C0074C20ADEAB500BC330E /* FoodItemDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074B20ADEAB500BC330E /* FoodItemDetailAction.swift */; };
-		E0C0074E20ADEB4000BC330E /* FoodItemDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074D20ADEB4000BC330E /* FoodItemDetailReducer.swift */; };
+		E0C0074C20ADEAB500BC330E /* SelectFoodItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074B20ADEAB500BC330E /* SelectFoodItemAction.swift */; };
 		E0C0075020ADF91E00BC330E /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074F20ADF91E00BC330E /* RoutingAction.swift */; };
+		E0C0075220B0A73600BC330E /* ApplySearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,7 @@
 		E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaReducer.swift; sourceTree = "<group>"; };
 		E06812D420AA3002006E982A /* UITableView+RealmChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RealmChanges.swift"; sourceTree = "<group>"; };
 		E06812D620AA3040006E982A /* UserInputAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputAlert.swift; sourceTree = "<group>"; };
-		E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCriteriaAction.swift; sourceTree = "<group>"; };
+		E07D506B209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSearchCriteriaAction.swift; sourceTree = "<group>"; };
 		E07D506D209A138300FB9624 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		E07D506F209A13CE00FB9624 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		E07D5071209A266600FB9624 /* FoodsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsState.swift; sourceTree = "<group>"; };
@@ -91,10 +90,9 @@
 		E07D507B209F84AC00FB9624 /* SalicylateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalicylateContent.swift; sourceTree = "<group>"; };
 		E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		E0C0074720ADE7BA00BC330E /* FoodItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemDetailViewController.swift; sourceTree = "<group>"; };
-		E0C0074920ADE96F00BC330E /* FoodItemDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemDetailState.swift; sourceTree = "<group>"; };
-		E0C0074B20ADEAB500BC330E /* FoodItemDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemDetailAction.swift; sourceTree = "<group>"; };
-		E0C0074D20ADEB4000BC330E /* FoodItemDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemDetailReducer.swift; sourceTree = "<group>"; };
+		E0C0074B20ADEAB500BC330E /* SelectFoodItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodItemAction.swift; sourceTree = "<group>"; };
 		E0C0074F20ADF91E00BC330E /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySearchCriteriaAction.swift; sourceTree = "<group>"; };
 		EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,9 +232,10 @@
 		E04178302097591600C2B17B /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				E0C0074B20ADEAB500BC330E /* FoodItemDetailAction.swift */,
+				E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */,
 				E0C0074F20ADF91E00BC330E /* RoutingAction.swift */,
-				E07D506B209A0DDE00FB9624 /* SearchCriteriaAction.swift */,
+				E0C0074B20ADEAB500BC330E /* SelectFoodItemAction.swift */,
+				E07D506B209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -245,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				E0417838209764D700C2B17B /* AppReducer.swift */,
-				E0C0074D20ADEB4000BC330E /* FoodItemDetailReducer.swift */,
 				E07D5073209A283000FB9624 /* FoodsReducer.swift */,
 				E041784020976AC400C2B17B /* RoutingReducer.swift */,
 				E04178492097F6F200C2B17B /* SearchCriteriaReducer.swift */,
@@ -283,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				E04178362097648D00C2B17B /* AppState.swift */,
-				E0C0074920ADE96F00BC330E /* FoodItemDetailState.swift */,
 				E07D5071209A266600FB9624 /* FoodsState.swift */,
 				E041783D209769CD00C2B17B /* RoutingState.swift */,
 				E04178472097F55500C2B17B /* SearchCriteriaState.swift */,
@@ -471,16 +468,15 @@
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
 				E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */,
 				E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */,
-				E0C0074C20ADEAB500BC330E /* FoodItemDetailAction.swift in Sources */,
+				E0C0074C20ADEAB500BC330E /* SelectFoodItemAction.swift in Sources */,
 				E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */,
-				E07D506C209A0DDE00FB9624 /* SearchCriteriaAction.swift in Sources */,
+				E07D506C209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift in Sources */,
 				E04178482097F55500C2B17B /* SearchCriteriaState.swift in Sources */,
 				E04178442097810300C2B17B /* TableDataSource.swift in Sources */,
-				E0C0074E20ADEB4000BC330E /* FoodItemDetailReducer.swift in Sources */,
 				E07D5078209F7ABF00FB9624 /* OxalateContent.swift in Sources */,
 				E022025420AA2D8C002C0A60 /* Path.swift in Sources */,
-				E0C0074A20ADE96F00BC330E /* FoodItemDetailState.swift in Sources */,
 				E0417839209764D700C2B17B /* AppReducer.swift in Sources */,
+				E0C0075220B0A73600BC330E /* ApplySearchCriteriaAction.swift in Sources */,
 				E06812D720AA3040006E982A /* UserInputAlert.swift in Sources */,
 				E0C0075020ADF91E00BC330E /* RoutingAction.swift in Sources */,
 				E041784120976AC400C2B17B /* RoutingReducer.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  SearchCriteriaAction.swift
+//  UpdateSearchCriteriaAction.swift
 //  FoodTracker
 //
 //  Created by Michael Vork on 5/2/18.
@@ -8,7 +8,7 @@
 
 import ReSwift
 
-struct SearchCriteriaAction: Action {
+struct UpdateSearchCriteriaAction: Action {
     let oxalateContent: OxalateContent
     let gfcfStatus: GFCFStatus
     let scdStatus: SCDStatus

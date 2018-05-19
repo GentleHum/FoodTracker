@@ -12,6 +12,5 @@ struct AppState: StateType {
     let routingState: RoutingState
     let foodsState: FoodsState
     let searchCriteriaState: SearchCriteriaState
-    let foodItemDetailState: FoodItemDetailState
 }
 

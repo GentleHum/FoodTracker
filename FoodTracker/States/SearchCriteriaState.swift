@@ -9,7 +9,6 @@
 import ReSwift
 
 struct SearchCriteriaState: StateType {
-    var matchingItems: [FoodItem]
     var oxalateContent: OxalateContent
     var gfcfStatus: GFCFStatus
     var scdStatus: SCDStatus
@@ -27,6 +26,35 @@ struct SearchCriteriaState: StateType {
         self.salicylateContent = salicylateContent
         self.foodCategory = foodCategory
         self.foodName = foodName
-        matchingItems = [FoodItem]()
+    }
+    
+    func apply(to foodItems: [FoodItem]) -> [FoodItem] {
+        var filteredItems = foodItems
+        
+        if self.oxalateContent != .all {
+            filteredItems = filteredItems.filter { $0.oxalateContent == self.oxalateContent }
+        }
+        
+        if self.gfcfStatus != .all {
+            filteredItems = filteredItems.filter { $0.gfcfStatus == self.gfcfStatus }
+        }
+        
+        if self.scdStatus != .all {
+            filteredItems = filteredItems.filter { $0.scdStatus == self.scdStatus }
+        }
+        
+        if self.salicylateContent != .all {
+            filteredItems = filteredItems.filter { $0.salicylateContent == self.salicylateContent }
+        }
+        
+        if self.foodCategory != .all {
+            filteredItems = filteredItems.filter { $0.category == self.foodCategory }
+        }
+        
+        if !self.foodName.isEmpty {
+            filteredItems = filteredItems.filter { $0.name.uppercased().contains(self.foodName.uppercased()) }
+        }
+        
+        return filteredItems
     }
 }

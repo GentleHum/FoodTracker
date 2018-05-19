@@ -1,5 +1,5 @@
 //
-//  FoodItemDetailAction.swift
+//  SelectFoodItemAction.swift
 //  FoodTracker
 //
 //  Created by Michael Vork on 5/17/18.
@@ -8,10 +8,6 @@
 
 import ReSwift
 
-struct FoodItemDetailAction: Action {
+struct SelectFoodItemAction: Action {
     let foodItem: FoodItem
-    
-    init(foodItem: FoodItem) {
-        self.foodItem = foodItem
-    }
 }

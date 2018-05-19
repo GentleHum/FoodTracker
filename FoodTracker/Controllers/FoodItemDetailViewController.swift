@@ -20,7 +20,7 @@ final class FoodItemDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         store.subscribe(self) {
             $0.select {
-                $0.foodItemDetailState
+                $0.foodsState
             }
         }
     }
@@ -43,12 +43,14 @@ final class FoodItemDetailViewController: UIViewController {
 
 // MARK: - StoreSubscriber
 extension FoodItemDetailViewController: StoreSubscriber {
-    func newState(state: FoodItemDetailState) {
+    func newState(state: FoodsState) {
         print("+++++++++++FoodItemDetailViewController: newState")  // zap
-        print("\(state.foodItem)")   //zap
-        nameLabel.text = state.foodItem.name
+        print("\(state.selectedItem)")   //zap
+        nameLabel.text = state.selectedItem.name
     }
 }
+
+
 
 // MARK: - Table View Delegate
 extension FoodItemDetailViewController: UITableViewDelegate {

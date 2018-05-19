@@ -36,33 +36,35 @@ final class FoodTrackerViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
-        dispatchSearchCriteriaAction()
+        dispatchSearchCriteriaActions()
     }
     
     @IBAction func criteriaControlDidChange(_ sender: UISegmentedControl) {
-        dispatchSearchCriteriaAction()
+        dispatchSearchCriteriaActions()
     }
     
-    private func dispatchSearchCriteriaAction() {
-        let action = SearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
-                                          gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
-                                          scdStatus: scdValues[scdControl.selectedSegmentIndex],
-                                          salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
-                                          foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
-                                          foodName: nameTextField.text ?? "")
+    private func dispatchSearchCriteriaActions() {
+        let action = UpdateSearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
+                                                gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
+                                                scdStatus: scdValues[scdControl.selectedSegmentIndex],
+                                                salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
+                                                foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
+                                                foodName: nameTextField.text ?? "")
         store.dispatch(action)
+        store.dispatch(applySearchCriteria)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         store.subscribe(self) {
             $0.select {
-                $0.searchCriteriaState
+                $0.foodsState
             }
         }
         
         store.dispatch(RoutingAction(destination: .main))
-        store.dispatch(SearchCriteriaAction())
+        dispatchSearchCriteriaActions()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -98,7 +100,7 @@ final class FoodTrackerViewController: UIViewController {
 
 // MARK: - StoreSubscriber
 extension FoodTrackerViewController: StoreSubscriber {
-    func newState(state: SearchCriteriaState) {
+    func newState(state: FoodsState) {
         tableDataSource?.models = state.matchingItems
         tableView.reloadData()
         
@@ -127,7 +129,7 @@ extension FoodTrackerViewController: UITableViewDelegate {
         print("selected row: \(indexPath.row)")  // zap
         store.dispatch(RoutingAction(destination: .foodItemDetail))
         if let foodItem = tableDataSource?.models[indexPath.row] {
-            store.dispatch(FoodItemDetailAction(foodItem: foodItem))
+            store.dispatch(SelectFoodItemAction(foodItem: foodItem))
         }
 
     }

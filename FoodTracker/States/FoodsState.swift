@@ -10,7 +10,9 @@ import ReSwift
 
 struct FoodsState: StateType {
     var foodItems: [FoodItem] = [FoodItem]()
-    
+    var matchingItems: [FoodItem] = [FoodItem]()
+    var selectedItem: FoodItem = FoodItem()
+
     init() {
     }
 }
