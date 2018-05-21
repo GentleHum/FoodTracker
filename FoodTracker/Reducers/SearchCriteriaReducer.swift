@@ -14,12 +14,15 @@ func searchCriteriaReducer(action: Action, state: SearchCriteriaState?) -> Searc
     
     switch action {
     case let searchCriteriaAction as UpdateSearchCriteriaAction:
+        state.foodName = searchCriteriaAction.foodName
+        state.foodCategory = searchCriteriaAction.foodCategory
         state.oxalateContent = searchCriteriaAction.oxalateContent
+        state.salicylateContent = searchCriteriaAction.salicylateContent
+        state.amineContent = searchCriteriaAction.amineContent
         state.gfcfStatus = searchCriteriaAction.gfcfStatus
         state.scdStatus = searchCriteriaAction.scdStatus
-        state.salicylateContent = searchCriteriaAction.salicylateContent
-        state.foodCategory = searchCriteriaAction.foodCategory
-        state.foodName = searchCriteriaAction.foodName
+        state.paleoStatus = searchCriteriaAction.paleoStatus
+        state.fodmapStatus = searchCriteriaAction.fodmapStatus
     default: break
     }
     

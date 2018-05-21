@@ -43,6 +43,9 @@
 		E0C0075220B0A73600BC330E /* ApplySearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */; };
 		E0C0075420B1A0C100BC330E /* DietTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075320B1A0C100BC330E /* DietTrackerViewController.swift */; };
 		E0C0075620B1DDFF00BC330E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075520B1DDFF00BC330E /* MainTabBarViewController.swift */; };
+		E0C0075820B346A100BC330E /* PaleoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075720B346A100BC330E /* PaleoStatus.swift */; };
+		E0C0075A20B3479600BC330E /* FodmapStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075920B3479600BC330E /* FodmapStatus.swift */; };
+		E0C0075C20B3493300BC330E /* AmineContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075B20B3493300BC330E /* AmineContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySearchCriteriaAction.swift; sourceTree = "<group>"; };
 		E0C0075320B1A0C100BC330E /* DietTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTrackerViewController.swift; sourceTree = "<group>"; };
 		E0C0075520B1DDFF00BC330E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		E0C0075720B346A100BC330E /* PaleoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoStatus.swift; sourceTree = "<group>"; };
+		E0C0075920B3479600BC330E /* FodmapStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodmapStatus.swift; sourceTree = "<group>"; };
+		E0C0075B20B3493300BC330E /* AmineContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmineContent.swift; sourceTree = "<group>"; };
 		EF02ABB91BE7C410D6CC6CFA /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,12 +231,15 @@
 		E041782F2097591000C2B17B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E07D506D209A138300FB9624 /* FoodItem.swift */,
+				E0C0075B20B3493300BC330E /* AmineContent.swift */,
+				E0C0075920B3479600BC330E /* FodmapStatus.swift */,
 				E07D506F209A13CE00FB9624 /* FoodCategory.swift */,
+				E07D506D209A138300FB9624 /* FoodItem.swift */,
 				E07D5075209D121900FB9624 /* GFCFStatus.swift */,
 				E07D5077209F7ABF00FB9624 /* OxalateContent.swift */,
-				E07D5079209F817300FB9624 /* SCDStatus.swift */,
+				E0C0075720B346A100BC330E /* PaleoStatus.swift */,
 				E07D507B209F84AC00FB9624 /* SalicylateContent.swift */,
+				E07D5079209F817300FB9624 /* SCDStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -466,9 +475,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C0074820ADE7BA00BC330E /* FoodItemDetailViewController.swift in Sources */,
+				E0C0075820B346A100BC330E /* PaleoStatus.swift in Sources */,
 				E07D507C209F84AC00FB9624 /* SalicylateContent.swift in Sources */,
 				E041783E209769CD00C2B17B /* RoutingState.swift in Sources */,
+				E0C0075A20B3479600BC330E /* FodmapStatus.swift in Sources */,
 				E04178372097648D00C2B17B /* AppState.swift in Sources */,
+				E0C0075C20B3493300BC330E /* AmineContent.swift in Sources */,
 				E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */,
 				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,

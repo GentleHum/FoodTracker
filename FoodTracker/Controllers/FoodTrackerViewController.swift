@@ -18,9 +18,9 @@ final class FoodTrackerViewController: UIViewController {
     
     let oxalateValues: [OxalateContent] =
         [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let gfcfValues: [GFCFStatus] = [ .all, .yes, .no ]
-    let scdValues: [SCDStatus] = [ .all, .yes, .no ]
     let salicylateValues: [SalicylateContent] =
+        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
+    let amineValues: [AmineContent] =
         [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let categoryValues: [FoodCategory] =
         [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
@@ -29,8 +29,7 @@ final class FoodTrackerViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var oxalateContentControl: UISegmentedControl!
-    @IBOutlet weak var gfcfControl: UISegmentedControl!
-    @IBOutlet weak var scdControl: UISegmentedControl!
+    @IBOutlet weak var amineControl: UISegmentedControl!
     @IBOutlet weak var salicylateContentControl: UISegmentedControl!
     @IBOutlet weak var categoryControl: UISegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
@@ -45,9 +44,8 @@ final class FoodTrackerViewController: UIViewController {
     
     private func dispatchSearchCriteriaActions() {
         let action = UpdateSearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
-                                                gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
-                                                scdStatus: scdValues[scdControl.selectedSegmentIndex],
                                                 salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
+                                                amineContent: amineValues[amineControl.selectedSegmentIndex],
                                                 foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
                                                 foodName: nameTextField.text ?? "")
         store.dispatch(action)

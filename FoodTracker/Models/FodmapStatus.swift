@@ -1,14 +1,12 @@
 //
-//  SCDStatus.swift
+//  FodmapStatus.swift
 //  FoodTracker
 //
-//  Created by Michael Vork on 5/6/18.
+//  Created by Michael Vork on 5/21/18.
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import ReSwift
-
-enum SCDStatus: String {
+enum FodmapStatus: String {
     case all = "All"
     case yes = "Yes"
     case no = "No"
@@ -18,10 +16,7 @@ enum SCDStatus: String {
     }
     
     func apply(to foodItems: [FoodItem]) -> [FoodItem] {
-        return self.rawValue == SCDStatus.all.rawValue ? foodItems :
-            foodItems.filter{ $0.scdStatus.rawValue == self.rawValue }
+        return self.rawValue == FodmapStatus.all.rawValue ? foodItems :
+            foodItems.filter{ $0.fodmapStatus.rawValue == self.rawValue }
     }
 }
-
-
-

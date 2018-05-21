@@ -6,31 +6,52 @@
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
-import Foundation
 import RealmSwift
 
 @objcMembers class FoodItem: Object {
     enum Property: String {
-        case id, name, oxalateContent, gfcfStatus, scdStatus, salicylateContent, category
+        case id, name, category, oxalateContent, salicylateContent, amineContent, gfcfStatus, scdStatus, paleoStatus, fodmapStatus
     }
 
     dynamic var id = UUID().uuidString
     dynamic var name: String = ""
+    @objc dynamic private var _category = FoodCategory.all.rawValue
+
+    // food compound types
     @objc dynamic private var _oxalateContent = OxalateContent.all.rawValue
+    @objc dynamic private var _salicylateContent = SalicylateContent.all.rawValue
+    @objc dynamic private var _amineContent = AmineContent.all.rawValue
+
+    // diet types
     @objc dynamic private var _gfcfStatus = GFCFStatus.all.rawValue
     @objc dynamic private var _scdStatus = SCDStatus.all.rawValue
-    @objc dynamic private var _salicylateContent = SalicylateContent.all.rawValue
-    @objc dynamic private var _category = FoodCategory.all.rawValue
-    
+    @objc dynamic private var _paleoStatus = PaleoStatus.all.rawValue
+    @objc dynamic private var _fodmapStatus = FodmapStatus.all.rawValue
+
     override static func primaryKey() -> String? {
         return FoodItem.Property.id.rawValue
     }
     
+    var category: FoodCategory {
+        get { return FoodCategory(rawValue: _category) ?? FoodCategory.all }
+        set { _category = newValue.rawValue }
+    }
+
     var oxalateContent: OxalateContent {
         get { return OxalateContent(rawValue: _oxalateContent) ?? OxalateContent.all }
         set { _oxalateContent = newValue.rawValue }
     }
     
+    var salicylateContent: SalicylateContent {
+        get { return SalicylateContent(rawValue: _salicylateContent) ?? SalicylateContent.all }
+        set { _salicylateContent = newValue.rawValue }
+    }
+
+    var amineContent: AmineContent {
+        get { return AmineContent(rawValue: _amineContent) ?? AmineContent.all }
+        set { _amineContent = newValue.rawValue }
+    }
+
     var gfcfStatus: GFCFStatus {
         get { return GFCFStatus(rawValue: _gfcfStatus) ?? GFCFStatus.all }
         set { _gfcfStatus = newValue.rawValue }
@@ -41,29 +62,39 @@ import RealmSwift
         set { _scdStatus = newValue.rawValue }
     }
 
-    var salicylateContent: SalicylateContent {
-        get { return SalicylateContent(rawValue: _salicylateContent) ?? SalicylateContent.all }
-        set { _salicylateContent = newValue.rawValue }
+    var paleoStatus: PaleoStatus {
+        get { return PaleoStatus(rawValue: _paleoStatus) ?? PaleoStatus.all }
+        set { _paleoStatus = newValue.rawValue }
     }
     
-    var category: FoodCategory {
-        get { return FoodCategory(rawValue: _category) ?? FoodCategory.all }
-        set { _category = newValue.rawValue }
+    var fodmapStatus: FodmapStatus {
+        get { return FodmapStatus(rawValue: _fodmapStatus) ?? FodmapStatus.all }
+        set { _fodmapStatus = newValue.rawValue }
     }
+
     
     convenience init(name: String = "",
+                     category: FoodCategory = .all,
                      oxalateContent: OxalateContent = .all,
+                     salicylateContent: SalicylateContent = .all,
+                     amineContent: AmineContent = .all,
                      gfcfStatus: GFCFStatus = .all,
                      scdStatus: SCDStatus = .all,
-                     salicylateContent: SalicylateContent = .all,
-                     category: FoodCategory = .all) {
+                     paleoStatus: PaleoStatus = .all,
+                     fodmapStatus: FodmapStatus = .all) {
         self.init()
         self.name = name
+        self.category = category
+        
         self.oxalateContent = oxalateContent
+        self.salicylateContent = salicylateContent
+        self.amineContent = amineContent
+
         self.gfcfStatus = gfcfStatus
         self.scdStatus = scdStatus
-        self.salicylateContent = salicylateContent
-        self.category = category
+        self.paleoStatus = paleoStatus
+        self.fodmapStatus = fodmapStatus
+
     }
 }
 
