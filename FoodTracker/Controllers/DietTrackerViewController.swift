@@ -78,7 +78,7 @@ final class DietTrackerViewController: UIViewController {
         tableDataSource = TableDataSource(cellIdentifier: Storyboard.cellIdentifier, models: []) {cell, model in
             
             if let foodItemCell = cell as? FoodItemTableViewCell {
-                foodItemCell.configureCell(with: model)
+                foodItemCell.configureCell(with: model, forType: .diets)
             }
             
             return cell

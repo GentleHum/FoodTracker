@@ -75,13 +75,13 @@ import RealmSwift
     
     convenience init(name: String = "",
                      category: FoodCategory = .all,
-                     oxalateContent: OxalateContent = .all,
-                     salicylateContent: SalicylateContent = .all,
-                     amineContent: AmineContent = .all,
-                     gfcfStatus: GFCFStatus = .all,
-                     scdStatus: SCDStatus = .all,
-                     paleoStatus: PaleoStatus = .all,
-                     fodmapStatus: FodmapStatus = .all) {
+                     oxalateContent: OxalateContent = .varies,
+                     salicylateContent: SalicylateContent = .varies,
+                     amineContent: AmineContent = .varies,
+                     gfcfStatus: GFCFStatus = .yes,
+                     scdStatus: SCDStatus = .yes,
+                     paleoStatus: PaleoStatus = .yes,
+                     fodmapStatus: FodmapStatus = .yes) {
         self.init()
         self.name = name
         self.category = category
