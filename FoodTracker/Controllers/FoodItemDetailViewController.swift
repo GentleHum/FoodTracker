@@ -11,7 +11,7 @@ import ReSwift
 final class FoodItemDetailViewController: UIViewController {
     private struct Storyboard {
         static let cellIdentifier = "FoodItemDetailCell"
-        static let title = "Restore Health Now"
+        static let title = "RHN"
     }
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -30,12 +30,9 @@ final class FoodItemDetailViewController: UIViewController {
         store.unsubscribe(self)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
-        
         self.title = Storyboard.title
     }
     
@@ -45,7 +42,6 @@ final class FoodItemDetailViewController: UIViewController {
 extension FoodItemDetailViewController: StoreSubscriber {
     func newState(state: FoodsState) {
         print("+++++++++++FoodItemDetailViewController: newState")  // zap
-        print("\(state.selectedItem)")   //zap
         nameLabel.text = state.selectedItem.name
     }
 }

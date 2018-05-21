@@ -1,37 +1,31 @@
 //
-//  FoodTrackerViewController.swift
+//  DietTrackerViewController.swift
 //  FoodTracker
 //
-//  Created by Michael Vork on 4/30/18.
+//  Created by Michael Vork on 5/20/18.
 //  Copyright © 2018 Michael Vork. All rights reserved.
 //
 
 import ReSwift
 
-final class FoodTrackerViewController: UIViewController {
+final class DietTrackerViewController: UIViewController {
     private struct Storyboard {
         static let cellIdentifier = "FoodItemCell"
-        static let title = "Foods"
+        static let title = "Diets"
     }
     
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
     
-    let oxalateValues: [OxalateContent] =
-        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let gfcfValues: [GFCFStatus] = [ .all, .yes, .no ]
     let scdValues: [SCDStatus] = [ .all, .yes, .no ]
-    let salicylateValues: [SalicylateContent] =
-        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let categoryValues: [FoodCategory] =
         [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
-
+    
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
-
+    
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var oxalateContentControl: UISegmentedControl!
     @IBOutlet weak var gfcfControl: UISegmentedControl!
     @IBOutlet weak var scdControl: UISegmentedControl!
-    @IBOutlet weak var salicylateContentControl: UISegmentedControl!
     @IBOutlet weak var categoryControl: UISegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -44,10 +38,8 @@ final class FoodTrackerViewController: UIViewController {
     }
     
     private func dispatchSearchCriteriaActions() {
-        let action = UpdateSearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
-                                                gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
+        let action = UpdateSearchCriteriaAction(gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
                                                 scdStatus: scdValues[scdControl.selectedSegmentIndex],
-                                                salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
                                                 foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
                                                 foodName: nameTextField.text ?? "")
         store.dispatch(action)
@@ -90,15 +82,15 @@ final class FoodTrackerViewController: UIViewController {
         tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
+        
         self.title = Storyboard.title
         
     }
-
+    
 }
 
 // MARK: - StoreSubscriber
-extension FoodTrackerViewController: StoreSubscriber {
+extension DietTrackerViewController: StoreSubscriber {
     func newState(state: FoodsState) {
         tableDataSource?.models = state.matchingItems
         tableView.reloadData()
@@ -114,7 +106,7 @@ extension FoodTrackerViewController: StoreSubscriber {
 }
 
 // MARK: - Table View Delegate
-extension FoodTrackerViewController: UITableViewDelegate {
+extension DietTrackerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(60.0)
@@ -130,7 +122,7 @@ extension FoodTrackerViewController: UITableViewDelegate {
         if let foodItem = tableDataSource?.models[indexPath.row] {
             store.dispatch(SelectFoodItemAction(foodItem: foodItem))
         }
-
+        
     }
 }
 
