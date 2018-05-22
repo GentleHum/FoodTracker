@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D847167F58558B48BF4A6FBB /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */; };
+		E017B0EC20B3B918007749BC /* DietFoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */; };
 		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
 		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
 		E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780D209758BE00C2B17B /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		1278E5DDDF666149D7D84B06 /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9511FF8D953FA4CEAB74900B /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		E01D588D20A9F88A002A6D6C /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
 		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		E041780A209758BE00C2B17B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -323,6 +325,7 @@
 		E0C0074420AC6EB900BC330E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */,
 				E0C0074520AC6F7500BC330E /* FoodItemTableViewCell.swift */,
 			);
 			path = Cells;
@@ -508,6 +511,7 @@
 				E07D5076209D121900FB9624 /* GFCFStatus.swift in Sources */,
 				E06812D520AA3002006E982A /* UITableView+RealmChanges.swift in Sources */,
 				E0C0075620B1DDFF00BC330E /* MainTabBarViewController.swift in Sources */,
+				E017B0EC20B3B918007749BC /* DietFoodItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

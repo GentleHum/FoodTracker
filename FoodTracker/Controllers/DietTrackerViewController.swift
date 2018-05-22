@@ -10,7 +10,7 @@ import ReSwift
 
 final class DietTrackerViewController: UIViewController {
     private struct Storyboard {
-        static let cellIdentifier = "FoodItemCell"
+        static let cellIdentifier = "DietFoodItemCell"
         static let title = "Diets"
     }
     
@@ -78,7 +78,7 @@ final class DietTrackerViewController: UIViewController {
         tableDataSource = TableDataSource(cellIdentifier: Storyboard.cellIdentifier, models: []) {cell, model in
             
             if let foodItemCell = cell as? FoodItemTableViewCell {
-                foodItemCell.configureCell(with: model, forType: .diets)
+                foodItemCell.configureCell(with: model)
             }
             
             return cell
