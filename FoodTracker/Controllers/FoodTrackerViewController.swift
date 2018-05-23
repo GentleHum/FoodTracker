@@ -101,13 +101,8 @@ extension FoodTrackerViewController: StoreSubscriber {
         tableDataSource?.models = state.matchingItems
         tableView.reloadData()
         
-        // scroll to top AFTER table is reloaded (only if table is not empty)
-        DispatchQueue.main.async {
-            if self.tableView.numberOfRows(inSection: 0) > 0 {
-                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0),
-                                           at: .top, animated: true)
-            }
-        }
+        // scroll to top AFTER table is reloaded
+        tableView.scrollToTop(ofSection: 0)
     }
 }
 
