@@ -8,13 +8,11 @@
 
 import ReSwift
 
-final class FoodTrackerViewController: UIViewController {
+final class FoodTrackerViewController: FoodItemSearchViewController {
     private struct Storyboard {
         static let cellIdentifier = "FoodItemCell"
         static let title = "Foods"
     }
-    
-    let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
     
     let oxalateValues: [OxalateContent] =
         [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
@@ -24,9 +22,7 @@ final class FoodTrackerViewController: UIViewController {
         [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let categoryValues: [FoodCategory] =
         [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
-
-    var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var oxalateContentControl: UISegmentedControl!
     @IBOutlet weak var amineControl: UISegmentedControl!
@@ -54,29 +50,15 @@ final class FoodTrackerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        store.subscribe(self) {
-            $0.select {
-                $0.foodsState
-            }
-        }
         
         dispatchSearchCriteriaActions()
-        
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        store.unsubscribe(self)
-    }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        tableView.delegate = self
         
         tableDataSource = TableDataSource(cellIdentifier: Storyboard.cellIdentifier, models: []) {cell, model in
-            
             if let foodItemCell = cell as? FoodItemTableViewCell {
                 foodItemCell.configureCell(with: model)
             }
@@ -85,45 +67,18 @@ final class FoodTrackerViewController: UIViewController {
         }
         
         tableView.dataSource = tableDataSource
+        tableView.delegate = self
         tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
         self.title = Storyboard.title
-        
     }
-
-}
-
-// MARK: - StoreSubscriber
-extension FoodTrackerViewController: StoreSubscriber {
-    func newState(state: FoodsState) {
-        tableDataSource?.models = state.matchingItems
+    
+    // MARK: - StoreSubscriber
+    override func newState(state: FoodsState) {
+        super.newState(state: state)
+        
         tableView.reloadData()
-        
-        // scroll to top AFTER table is reloaded
-        tableView.scrollToTop(ofSection: 0)
+        tableView.scrollToTop(ofSection: 0)  // scroll to top AFTER table is reloaded
     }
 }
-
-// MARK: - Table View Delegate
-extension FoodTrackerViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(60.0)
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = cellColors[indexPath.row % 2]
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected row: \(indexPath.row)")  // zap
-        store.dispatch(RoutingAction(destination: .foodItemDetail))
-        if let foodItem = tableDataSource?.models[indexPath.row] {
-            store.dispatch(SelectFoodItemAction(foodItem: foodItem))
-        }
-
-    }
-}
-
