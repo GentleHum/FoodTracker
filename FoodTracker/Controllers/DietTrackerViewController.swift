@@ -21,7 +21,7 @@ final class DietTrackerViewController: UIViewController {
     let paleoValues: [PaleoStatus] = [ .all, .yes, .no ]
     let fodmapValues: [FodmapStatus] = [ .all, .yes, .no ]
     let categoryValues: [FoodCategory] =
-        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
+        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
     
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
     
@@ -90,7 +90,6 @@ final class DietTrackerViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.title = Storyboard.title
-        
     }
     
 }

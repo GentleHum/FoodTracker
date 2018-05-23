@@ -15,6 +15,15 @@ final class FoodItemDetailViewController: UIViewController {
     }
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var oxalateValueLabel: UILabel!
+    @IBOutlet weak var salicylateValueLabel: UILabel!
+    @IBOutlet weak var amineValueLabel: UILabel!
+    @IBOutlet weak var gfcfValueLabel: UILabel!
+    @IBOutlet weak var scdValueLabel: UILabel!
+    @IBOutlet weak var paleoValueLabel: UILabel!
+    @IBOutlet weak var fodmapValueLabel: UILabel!
+
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,6 +52,17 @@ extension FoodItemDetailViewController: StoreSubscriber {
     func newState(state: FoodsState) {
         print("+++++++++++FoodItemDetailViewController: newState")  // zap
         nameLabel.text = state.selectedItem.name
+        categoryLabel.text = state.selectedItem.category.description()
+        oxalateValueLabel.text = "Oxalate: " + state.selectedItem.oxalateContent.description()
+        salicylateValueLabel.text = "Salicylate: " + state.selectedItem.salicylateContent.description()
+        amineValueLabel.text = "Amine: " + state.selectedItem.amineContent.description()
+        gfcfValueLabel.text = "GFCF: " + state.selectedItem.gfcfStatus.description()
+        scdValueLabel.text = "SCD: " + state.selectedItem.scdStatus.description()
+        paleoValueLabel.text = "Paleo: " + state.selectedItem.paleoStatus.description()
+        fodmapValueLabel.text = "Fodmap: " + state.selectedItem.fodmapStatus.description()
+        
+        self.title = nameLabel.text
+
     }
 }
 

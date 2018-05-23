@@ -23,7 +23,7 @@ final class FoodTrackerViewController: UIViewController {
     let amineValues: [AmineContent] =
         [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
     let categoryValues: [FoodCategory] =
-        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .alcohol, .nut]
+        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
 
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
 

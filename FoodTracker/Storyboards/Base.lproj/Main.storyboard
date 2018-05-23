@@ -101,7 +101,7 @@
                                     <segment title="Meat"/>
                                     <segment title="Fruit"/>
                                     <segment title="Dairy"/>
-                                    <segment title="Alc"/>
+                                    <segment title="Bev"/>
                                     <segment title="Nut"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,7 +116,7 @@
                                 </constraints>
                                 <segments>
                                     <segment title="All"/>
-                                    <segment title=" - "/>
+                                    <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
                                     <segment title="L"/>
@@ -137,7 +137,7 @@
                                 </constraints>
                                 <segments>
                                     <segment title="All"/>
-                                    <segment title=" - "/>
+                                    <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
                                     <segment title="L"/>
@@ -203,7 +203,7 @@
                                 </constraints>
                                 <segments>
                                     <segment title="All"/>
-                                    <segment title=" - "/>
+                                    <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
                                     <segment title="L"/>
@@ -280,27 +280,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here we are!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-ql-0Gb">
-                                <rect key="frame" x="137.5" y="198" width="100.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-ql-0Gb">
+                                <rect key="frame" x="155.5" y="329" width="64.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-healthy-vegetables-264537" translatesAutoresizingMaskIntoConstraints="NO" id="cD9-Ty-sMD">
+                                <rect key="frame" x="38" y="80" width="300" height="225"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja4-2v-QSd">
+                                <rect key="frame" x="148.5" y="362" width="78.5" height="23"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vU0-Lw-3TM">
+                                <rect key="frame" x="8" y="409" width="359" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oxalate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kae-M3-XMM">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salicylate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub2-xn-nmt">
+                                        <rect key="frame" x="0.0" y="26" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWs-og-YrR">
+                                        <rect key="frame" x="0.0" y="51.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="4e0-ni-mb1"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-O5-ij6">
+                                <rect key="frame" x="8" y="505" width="359" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GFCF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW2-vh-6Lg">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buS-GX-MrZ">
+                                        <rect key="frame" x="0.0" y="25" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paleo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u8-6d-5Rd">
+                                        <rect key="frame" x="0.0" y="50.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fodmap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opI-ch-b1M">
+                                        <rect key="frame" x="0.0" y="75.5" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="J0u-68-10W"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vU0-Lw-3TM" firstAttribute="leading" secondItem="yNb-by-olT" secondAttribute="leading" constant="8" id="Enl-Qu-H3g"/>
+                            <constraint firstItem="yNb-by-olT" firstAttribute="trailing" secondItem="vU0-Lw-3TM" secondAttribute="trailing" constant="8" id="Ua4-ph-YFs"/>
+                            <constraint firstItem="vU0-Lw-3TM" firstAttribute="centerX" secondItem="Xo1-Bv-DDA" secondAttribute="centerX" id="WtW-d6-2Rj"/>
+                            <constraint firstItem="cD9-Ty-sMD" firstAttribute="top" secondItem="yNb-by-olT" secondAttribute="top" constant="16" id="XFp-G6-wiU"/>
+                            <constraint firstItem="vU0-Lw-3TM" firstAttribute="top" secondItem="Ja4-2v-QSd" secondAttribute="bottom" constant="24" id="b0F-DM-y1e"/>
+                            <constraint firstItem="j8Z-ql-0Gb" firstAttribute="top" secondItem="cD9-Ty-sMD" secondAttribute="bottom" constant="24" id="cdS-b9-5P7"/>
                             <constraint firstItem="j8Z-ql-0Gb" firstAttribute="centerX" secondItem="Xo1-Bv-DDA" secondAttribute="centerX" id="d5j-JJ-8hk"/>
-                            <constraint firstItem="j8Z-ql-0Gb" firstAttribute="top" secondItem="yNb-by-olT" secondAttribute="top" constant="134" id="qHy-lC-jlC"/>
+                            <constraint firstItem="fKt-O5-ij6" firstAttribute="top" secondItem="vU0-Lw-3TM" secondAttribute="bottom" constant="24" id="hNc-oj-3C7"/>
+                            <constraint firstItem="fKt-O5-ij6" firstAttribute="leading" secondItem="yNb-by-olT" secondAttribute="leading" constant="8" id="hhX-uf-gv8"/>
+                            <constraint firstItem="cD9-Ty-sMD" firstAttribute="centerX" secondItem="Xo1-Bv-DDA" secondAttribute="centerX" id="hp5-Ch-Lcn"/>
+                            <constraint firstItem="Ja4-2v-QSd" firstAttribute="centerX" secondItem="Xo1-Bv-DDA" secondAttribute="centerX" id="md0-Bc-B5r"/>
+                            <constraint firstItem="yNb-by-olT" firstAttribute="trailing" secondItem="fKt-O5-ij6" secondAttribute="trailing" constant="8" id="qsC-YH-p9e"/>
+                            <constraint firstItem="Ja4-2v-QSd" firstAttribute="top" secondItem="j8Z-ql-0Gb" secondAttribute="bottom" constant="4" id="vTM-eS-0GG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yNb-by-olT"/>
                     </view>
                     <connections>
+                        <outlet property="amineValueLabel" destination="GWs-og-YrR" id="bo8-A6-gKD"/>
+                        <outlet property="categoryLabel" destination="Ja4-2v-QSd" id="ZwS-FR-hF7"/>
+                        <outlet property="fodmapValueLabel" destination="opI-ch-b1M" id="MFh-wa-U40"/>
+                        <outlet property="gfcfValueLabel" destination="uW2-vh-6Lg" id="qq1-Tp-itf"/>
                         <outlet property="nameLabel" destination="j8Z-ql-0Gb" id="Wh7-MR-Zv3"/>
+                        <outlet property="oxalateValueLabel" destination="kae-M3-XMM" id="oHz-uk-iux"/>
+                        <outlet property="paleoValueLabel" destination="6u8-6d-5Rd" id="xJ1-kx-7Ke"/>
+                        <outlet property="salicylateValueLabel" destination="ub2-xn-nmt" id="Fl8-4G-2jZ"/>
+                        <outlet property="scdValueLabel" destination="buS-GX-MrZ" id="XX6-zI-y6u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4C-s2-pkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311" y="322"/>
+            <point key="canvasLocation" x="2309.5999999999999" y="321.58920539730138"/>
         </scene>
         <!--Diet Tracker View Controller-->
         <scene sceneID="YS4-aq-qk5">
@@ -392,7 +478,7 @@
                                     <segment title="Meat"/>
                                     <segment title="Fruit"/>
                                     <segment title="Dairy"/>
-                                    <segment title="Alc"/>
+                                    <segment title="Bev"/>
                                     <segment title="Nut"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
@@ -604,6 +690,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.68834716081619263" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.2712131076388889" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="mLN-Ij-HJ2" kind="relationship" relationship="viewControllers" id="Aem-Ke-FIe"/>
@@ -618,11 +714,14 @@
         <scene sceneID="pOz-ao-Vsi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mLN-Ij-HJ2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Foods" id="Upt-73-Jxk"/>
+                    <tabBarItem key="tabBarItem" title="Foods" id="Upt-73-Jxk">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cTH-Fe-d75">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -642,6 +741,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BTk-ab-V72">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -653,7 +753,10 @@
             <point key="canvasLocation" x="136.80000000000001" y="814.54272863568224"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food-healthy-vegetables-264537" width="300" height="225"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pr2-Li-3eh"/>
+        <segue reference="nqc-1z-dyt"/>
     </inferredMetricsTieBreakers>
 </document>

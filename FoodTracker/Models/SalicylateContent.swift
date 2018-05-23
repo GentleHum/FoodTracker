@@ -9,15 +9,15 @@
 import ReSwift
 
 enum SalicylateContent: String {
-    case all = "All"
-    case unknown = "-"
-    case negligible = "Negligible"
-    case veryLow = "VL"
-    case low = "L"
-    case moderate = "Mod"
-    case high = "H"
-    case veryHigh = "VH"
-    case varies = "Var"
+    case all = "all"
+    case unknown = "unknown"
+    case negligible = "negligible"
+    case veryLow = "very low"
+    case low = "low"
+    case moderate = "moderate"
+    case high = "high"
+    case veryHigh = "very high"
+    case varies = "varies"
     
     func description() -> String {
         return self.rawValue

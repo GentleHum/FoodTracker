@@ -7,9 +7,9 @@
 //
 
 enum FodmapStatus: String {
-    case all = "All"
-    case yes = "Yes"
-    case no = "No"
+    case all = "all"
+    case yes = "yes"
+    case no = "no"
     
     func description() -> String {
         return self.rawValue

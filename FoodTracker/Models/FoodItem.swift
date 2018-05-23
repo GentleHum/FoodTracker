@@ -18,15 +18,15 @@ import RealmSwift
     @objc dynamic private var _category = FoodCategory.all.rawValue
 
     // food compound types
-    @objc dynamic private var _oxalateContent = OxalateContent.all.rawValue
-    @objc dynamic private var _salicylateContent = SalicylateContent.all.rawValue
-    @objc dynamic private var _amineContent = AmineContent.all.rawValue
+    @objc dynamic private var _oxalateContent = OxalateContent.varies.rawValue
+    @objc dynamic private var _salicylateContent = SalicylateContent.varies.rawValue
+    @objc dynamic private var _amineContent = AmineContent.varies.rawValue
 
     // diet types
-    @objc dynamic private var _gfcfStatus = GFCFStatus.all.rawValue
-    @objc dynamic private var _scdStatus = SCDStatus.all.rawValue
-    @objc dynamic private var _paleoStatus = PaleoStatus.all.rawValue
-    @objc dynamic private var _fodmapStatus = FodmapStatus.all.rawValue
+    @objc dynamic private var _gfcfStatus = GFCFStatus.yes.rawValue
+    @objc dynamic private var _scdStatus = SCDStatus.yes.rawValue
+    @objc dynamic private var _paleoStatus = PaleoStatus.yes.rawValue
+    @objc dynamic private var _fodmapStatus = FodmapStatus.yes.rawValue
 
     override static func primaryKey() -> String? {
         return FoodItem.Property.id.rawValue
