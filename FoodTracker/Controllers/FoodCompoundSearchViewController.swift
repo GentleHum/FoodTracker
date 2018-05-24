@@ -1,5 +1,5 @@
 //
-//  FoodTrackerViewController.swift
+//  FoodCompoundSearchViewController.swift
 //  FoodTracker
 //
 //  Created by Michael Vork on 4/30/18.
@@ -8,7 +8,7 @@
 
 import ReSwift
 
-final class FoodTrackerViewController: FoodItemSearchViewController {
+final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     private struct Storyboard {
         static let cellIdentifier = "FoodItemCell"
         static let title = "Foods"

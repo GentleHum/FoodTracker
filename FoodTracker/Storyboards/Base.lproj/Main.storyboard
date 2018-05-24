@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Food Tracker View Controller-->
+        <!--Food Compound Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FoodTrackerViewController" id="BYZ-38-t0r" customClass="FoodTrackerViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodTrackerViewController" id="BYZ-38-t0r" customClass="FoodCompoundSearchViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -388,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="2309.5999999999999" y="321.58920539730138"/>
         </scene>
-        <!--Diet Tracker View Controller-->
+        <!--Diet Search View Controller-->
         <scene sceneID="YS4-aq-qk5">
             <objects>
-                <viewController storyboardIdentifier="DietTrackerViewController" id="Hrz-Y9-RBh" customClass="DietTrackerViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DietTrackerViewController" id="Hrz-Y9-RBh" customClass="DietSearchViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eka-ke-sHF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

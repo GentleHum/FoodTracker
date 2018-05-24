@@ -14,7 +14,7 @@
 		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
 		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
 		E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780D209758BE00C2B17B /* AppDelegate.swift */; };
-		E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */; };
+		E0417810209758BE00C2B17B /* FoodCompoundSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* FoodCompoundSearchViewController.swift */; };
 		E0417813209758BE00C2B17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417811209758BE00C2B17B /* Main.storyboard */; };
 		E0417815209758BF00C2B17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0417814209758BF00C2B17B /* Assets.xcassets */; };
 		E0417818209758BF00C2B17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417816209758BF00C2B17B /* LaunchScreen.storyboard */; };
@@ -44,7 +44,7 @@
 		E0C0074C20ADEAB500BC330E /* SelectFoodItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074B20ADEAB500BC330E /* SelectFoodItemAction.swift */; };
 		E0C0075020ADF91E00BC330E /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0074F20ADF91E00BC330E /* RoutingAction.swift */; };
 		E0C0075220B0A73600BC330E /* ApplySearchCriteriaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */; };
-		E0C0075420B1A0C100BC330E /* DietTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075320B1A0C100BC330E /* DietTrackerViewController.swift */; };
+		E0C0075420B1A0C100BC330E /* DietSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075320B1A0C100BC330E /* DietSearchViewController.swift */; };
 		E0C0075620B1DDFF00BC330E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075520B1DDFF00BC330E /* MainTabBarViewController.swift */; };
 		E0C0075820B346A100BC330E /* PaleoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075720B346A100BC330E /* PaleoStatus.swift */; };
 		E0C0075A20B3479600BC330E /* FodmapStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C0075920B3479600BC330E /* FodmapStatus.swift */; };
@@ -71,7 +71,7 @@
 		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		E041780A209758BE00C2B17B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E041780D209758BE00C2B17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
+		E041780F209758BE00C2B17B /* FoodCompoundSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCompoundSearchViewController.swift; sourceTree = "<group>"; };
 		E0417812209758BE00C2B17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0417814209758BF00C2B17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0417817209758BF00C2B17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		E0C0074B20ADEAB500BC330E /* SelectFoodItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodItemAction.swift; sourceTree = "<group>"; };
 		E0C0074F20ADF91E00BC330E /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
 		E0C0075120B0A73600BC330E /* ApplySearchCriteriaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplySearchCriteriaAction.swift; sourceTree = "<group>"; };
-		E0C0075320B1A0C100BC330E /* DietTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietTrackerViewController.swift; sourceTree = "<group>"; };
+		E0C0075320B1A0C100BC330E /* DietSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSearchViewController.swift; sourceTree = "<group>"; };
 		E0C0075520B1DDFF00BC330E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E0C0075720B346A100BC330E /* PaleoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaleoStatus.swift; sourceTree = "<group>"; };
 		E0C0075920B3479600BC330E /* FodmapStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodmapStatus.swift; sourceTree = "<group>"; };
@@ -220,10 +220,10 @@
 		E041782D209758FC00C2B17B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E0C0075320B1A0C100BC330E /* DietTrackerViewController.swift */,
+				E0C0075320B1A0C100BC330E /* DietSearchViewController.swift */,
 				E0C0074720ADE7BA00BC330E /* FoodItemDetailViewController.swift */,
 				E017A5F020B6290B00AB5700 /* FoodItemSearchViewController.swift */,
-				E041780F209758BE00C2B17B /* FoodTrackerViewController.swift */,
+				E041780F209758BE00C2B17B /* FoodCompoundSearchViewController.swift */,
 				E0C0075520B1DDFF00BC330E /* MainTabBarViewController.swift */,
 			);
 			path = Controllers;
@@ -494,7 +494,7 @@
 				E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */,
 				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
-				E0417810209758BE00C2B17B /* FoodTrackerViewController.swift in Sources */,
+				E0417810209758BE00C2B17B /* FoodCompoundSearchViewController.swift in Sources */,
 				E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */,
 				E0C0074C20ADEAB500BC330E /* SelectFoodItemAction.swift in Sources */,
 				E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */,
@@ -506,7 +506,7 @@
 				E0417839209764D700C2B17B /* AppReducer.swift in Sources */,
 				E0C0075220B0A73600BC330E /* ApplySearchCriteriaAction.swift in Sources */,
 				E06812D720AA3040006E982A /* UserInputAlert.swift in Sources */,
-				E0C0075420B1A0C100BC330E /* DietTrackerViewController.swift in Sources */,
+				E0C0075420B1A0C100BC330E /* DietSearchViewController.swift in Sources */,
 				E0C0075020ADF91E00BC330E /* RoutingAction.swift in Sources */,
 				E041784120976AC400C2B17B /* RoutingReducer.swift in Sources */,
 				E07D506E209A138300FB9624 /* FoodItem.swift in Sources */,
