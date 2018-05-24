@@ -13,6 +13,7 @@ enum FoodCategory: String {
     case alcohol = "Alcoholic Beverage"
     case baking = "Baking Ingredient"
     case beverage = "Beverage"
+    case condiment = "Condiment"
     case dairy = "Dairy"
     case fat = "Fat"
     case fruit = "Fruit"

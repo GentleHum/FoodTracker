@@ -11,6 +11,8 @@
 		E017A5EF20B6258300AB5700 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A5EE20B6258300AB5700 /* UITableView.swift */; };
 		E017A5F120B6290B00AB5700 /* FoodItemSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A5F020B6290B00AB5700 /* FoodItemSearchViewController.swift */; };
 		E017A5F420B6461E00AB5700 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A5F320B6461E00AB5700 /* Util.swift */; };
+		E017A60B20B7145300AB5700 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A60A20B7145300AB5700 /* CSwiftV.swift */; };
+		E017A60F20B7170900AB5700 /* FoodTracker.csv in Resources */ = {isa = PBXBuildFile; fileRef = E017A60E20B7170900AB5700 /* FoodTracker.csv */; };
 		E017B0EC20B3B918007749BC /* DietFoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */; };
 		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
 		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
@@ -68,6 +70,9 @@
 		E017A5EE20B6258300AB5700 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		E017A5F020B6290B00AB5700 /* FoodItemSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemSearchViewController.swift; sourceTree = "<group>"; };
 		E017A5F320B6461E00AB5700 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E017A60920B7144900AB5700 /* CSwiftV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSwiftV.h; sourceTree = "<group>"; };
+		E017A60A20B7145300AB5700 /* CSwiftV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSwiftV.swift; sourceTree = "<group>"; };
+		E017A60E20B7170900AB5700 /* FoodTracker.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FoodTracker.csv; sourceTree = "<group>"; };
 		E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		E01D588D20A9F88A002A6D6C /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
 		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -153,6 +158,8 @@
 		E017A5F220B645DA00AB5700 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E017A60920B7144900AB5700 /* CSwiftV.h */,
+				E017A60A20B7145300AB5700 /* CSwiftV.swift */,
 				E017A5F320B6461E00AB5700 /* Util.swift */,
 			);
 			path = Util;
@@ -298,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				E0417814209758BF00C2B17B /* Assets.xcassets */,
+				E017A60E20B7170900AB5700 /* FoodTracker.csv */,
 				E0417819209758BF00C2B17B /* Info.plist */,
 			);
 			path = Resources;
@@ -432,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0417818209758BF00C2B17B /* LaunchScreen.storyboard in Resources */,
+				E017A60F20B7170900AB5700 /* FoodTracker.csv in Resources */,
 				E0417815209758BF00C2B17B /* Assets.xcassets in Resources */,
 				E0417813209758BE00C2B17B /* Main.storyboard in Resources */,
 			);
@@ -507,6 +516,7 @@
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
 				E0417810209758BE00C2B17B /* FoodCompoundSearchViewController.swift in Sources */,
 				E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */,
+				E017A60B20B7145300AB5700 /* CSwiftV.swift in Sources */,
 				E0C0074C20ADEAB500BC330E /* SelectFoodItemAction.swift in Sources */,
 				E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */,
 				E07D506C209A0DDE00FB9624 /* UpdateSearchCriteriaAction.swift in Sources */,

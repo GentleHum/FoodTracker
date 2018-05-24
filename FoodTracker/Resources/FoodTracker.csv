@@ -1,0 +1,356 @@
+Category,Name,Oxalate Content,GFCF Status,SCD Status,Salicylate Content,Paleo Status,Fodmap Status,Amine Content
+Dairy,Blue Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Brick Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Brie Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Camembert Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Cheddar Cheese,VL,N,Y,Neg,N,Y,Neg
+Dairy,Chevre,-,N,N,Neg,N,N,Neg
+Dairy,Colby Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Cottage Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Cream,-,N,N,Neg,N,N,Neg
+Dairy,Cream Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Dry Curd Cottage Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Edam Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Feta Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Ghee,VL,Y,Y,Neg,Y,Y,Neg
+Dairy,Gjetost Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Gorgonzola Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Gouda Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Gruyere Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Havarti Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Kefir,-,N,Y*,Neg,N,Y*,Neg
+Dairy,Limburger Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Manchego Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Monterey Jack Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Mozzerella Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Muenster Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Neufchatel Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Parmesan Cheese,L,N,Y,Neg,N,Y,Neg
+Dairy,Port du Salut Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Primost Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Provalone Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Ricotta Cheese,-,N,N,Neg,N,N,Neg
+Dairy,Romano Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Roquefort Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Sour Cream,-,N,N,Neg,N,N,Neg
+Dairy,Stilton Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Swiss Cheese,-,N,Y,Neg,N,Y,Neg
+Dairy,Yogurt (commercial),VL,N,N,Neg,N,N,Neg
+Dairy,Yogurt (homemade),-,N,Y,Neg,N,Y,Neg
+Beverage,Apple Cider,-,Y,Y,-,Y,Y,-
+Beverage,Apple Juice,VL,Y,N,M,Y,N,M
+Beverage,Buttermilk,VL,N,N,Neg,N,N,Neg
+Beverage,Cherry Juice,L,Y,Y*,-,Y,Y*,-
+Beverage,Chocolate Milk,H,N,N,Neg,N,N,Neg
+Beverage,Club Soda,-,Y,Y,-,Y,Y,-
+Beverage,Coconut Milk,-,Y,Y*,-,Y,Y*,-
+Beverage,Coffee,VL,Y,Y,Varies,Y,Y,Varies
+Beverage,Coffee (Instant),VL,Y,N,Varies,Y,N,Varies
+Beverage,Cranberry Juice,VL,Y,Y*,VH,Y,Y*,VH
+Beverage,Decaffeinated Products,Varies,Y^,N,Varies,Y^,N,Varies
+Beverage,Grape Juice-Purple,-,Y,Y,H,Y,Y,H
+Beverage,Grape Juice-Red,M,Y,Y,H,Y,Y,H
+Beverage,Grape Juice-White,L,Y,Y,M,Y,Y,M
+Beverage,Grapefruit Juice,VL,Y,Y*,H,Y,Y*,H
+Beverage,Juice from Concentrate,Varies,Y,N,Varies,Y,N,Varies
+Beverage,Milk,VL,N,N,Neg,N,N,Neg
+Beverage,Orange Juice-Fresh,VL,Y,Y,M,Y,Y,M
+Beverage,Orange Juice-Frozen,VL,Y,N,M,Y,N,M
+Beverage,Peppermint Tea,VL,Y,Y,VH,Y,Y,VH
+Beverage,Pineapple Juice,VL,Y,Y*,M,Y,Y*,M
+Beverage,Rice Milk-Carob,VH,Y^,N,-,Y^,N,-
+Beverage,Rice Milk-Vanilla,VH,Y^,N,-,Y^,N,-
+Beverage,Soybean Milk,VH,Y,N,Neg,Y,N,Neg
+Beverage,Spearmint Tea,VL,Y,Y,VH,Y,Y,VH
+Beverage,Tomato Juice (Canned),M,Y,Y*,M,Y,Y*,M
+Beverage,V8 Juice,H,Y,N,VH,Y,N,VH
+Fruit,Apples-Golden Delicious,L,Y,Y,L,Y,Y,L
+Fruit,Apples-Granny Smith,L,Y,Y,H,Y,Y,H
+Fruit,Apples-Jonathan,L,Y,Y,H,Y,Y,H
+Fruit,Apples-Red Delicious,L,Y,Y,M,Y,Y,M
+Fruit,Apricots-Fresh,VL,Y,Y,VH,Y,Y,VH
+Fruit,Avocados,VL,Y,N,H,Y,N,H
+Fruit,Bananas,M,Y,Y,Neg,Y,Y,Neg
+Fruit,Blackberries,VH,Y,Y,VH,Y,Y,VH
+Fruit,Blueberries,-,Y,Y,VH,Y,Y,VH
+Fruit,Canned Fruits,Varies,Y^,Y*,Varies,Y^,Y*,Varies
+Fruit,Cantaloupe,-,Y,Y,VH,Y,Y,VH
+Fruit,Casaba (Melon),L,Y,Y,-,Y,Y,-
+Fruit,Cherimoya,-,Y,Y,-,Y,Y,-
+Fruit,Cherries-Fresh,VL,Y,Y,H,Y,Y,H
+Fruit,Currants-Black,H,Y,Y,VH,Y,Y,VH
+Fruit,Currants-Red,H,Y,Y,VH,Y,Y,VH
+Fruit,Custard Apple,-,Y,Y,-,Y,Y,-
+Fruit,Dates,H,Y,Y*,VH,Y,Y*,VH
+Fruit,Dewberries,H,Y,Y,VH,Y,Y,VH
+Fruit,Figs-Dried,VH,Y,Y,H,Y,Y,H
+Fruit,Figs-Fresh,VH,Y,Y,M,Y,Y,M
+Fruit,Gooseberries,H,Y,Y,VH,Y,Y,VH
+Fruit,Grapefruit,-,Y,Y,H,Y,Y,H
+Fruit,Grapes-Green,VL,Y,Y,VH,Y,Y,VH
+Fruit,Grapes-Red,L,Y,Y,H,Y,Y,H
+Fruit,Honeydew,VL,Y,Y,-,Y,Y,-
+Fruit,Hucklesberries,L,Y,Y,VH,Y,Y,VH
+Fruit,Jicama,-,Y,N,-,Y,N,-
+Fruit,Kiwifruit,VH,Y,Y,H,Y,Y,H
+Fruit,Kumquats,VL,Y,Y,-,Y,Y,-
+Fruit,Lemons,VL,Y,Y,M,Y,Y,M
+Fruit,Lemon Juice,L,Y,Y,-,Y,Y,-
+Fruit,Lemon Peel,H,Y,Y,-,Y,Y,-
+Fruit,Limes,M,Y,Y,L,Y,Y,L
+Fruit,Lime Juice,L,Y,Y,M,Y,Y,M
+Fruit,Lime Peel,H,Y,Y,-,Y,Y,-
+Fruit,Limes,M,Y,Y,L,Y,Y,L
+Fruit,Lychees,L,Y,Y,-,Y,Y,-
+Fruit,Mandarin Oranges,M,Y,Y,-,Y,Y,-
+Fruit,Mangos,L,Y,Y,M,Y,Y,M
+Fruit,Necatarines,-,Y,Y,H,Y,Y,H
+Fruit,Oranges,H,Y,Y,VH,Y,Y,VH
+Fruit,Orange Peel,H,Y,Y,-,Y,Y,-
+Fruit,Papayas,H,Y,Y,VH,Y,Y,VH
+Fruit,Passion Fruit,VL,Y,Y,M,Y,Y,M
+Fruit,Peaches,VL,Y,Y,H,Y,Y,H
+Fruit,Pears-Peeled,L,Y,Y,Neg,Y,Y,Neg
+Fruit,Pears-Unpeeled,M,Y,Y,H,Y,Y,H
+Fruit,Perimmons,H,Y,Y,M,Y,Y,M
+Fruit,Pineapple,L,Y,Y,VH,Y,Y,VH
+Fruit,Plantains,-,Y,N,-,Y,N,-
+Fruit,Plums,L,Y,Y,M,Y,Y,M
+Fruit,Prunes,-,Y,Y,VH,Y,Y,VH
+Fruit,Raisins,L,Y,Y,VH,Y,Y,VH
+Fruit,Raspberries-Black,VH,Y,Y,VH,Y,Y,VH
+Fruit,Raspberries-Red,H,Y,Y,VH,Y,Y,VH
+Fruit,Sharifa,-,Y,Y,-,Y,Y,-
+Fruit,Star Fruit,VH,Y,Y,-,Y,Y,-
+Fruit,Tamarind,-,Y,N,-,Y,N,-
+Fruit,Tangerines,-,Y,Y,VH,Y,Y,VH
+Fruit,Watermelon,VL,Y,Y,H,Y,Y,H
+Grain,Alfalfa Sprouts,L,Y,N,-,Y,N,-
+Grain,Amaranth,H,Y,N,-,Y,N,-
+Grain,Barley,L,N,N,Neg,N,N,Neg
+Grain,Buckwheat,VH,Y,N,Neg,Y,N,Neg
+Grain,Bulgar,-,N,N,-,N,N,-
+Grain,Corn,L,Y,N,M,Y,N,M
+Grain,Cornstarch,M,Y,Y,-,Y,Y,-
+Grain,Durum Flour,VH,N,N,Neg,N,N,Neg
+Grain,Ezekiel Bread,-,N,N,-,N,N,-
+Grain,Flour (Wheat),VH,N,N,Neg,N,N,Neg
+Grain,Kamut,H,N,N,-,N,N,-
+Grain,Millet,VH,Y,N,Neg,Y,N,Neg
+Grain,Oats,M,N,N,Neg,N,N,Neg
+Grain,Pappadum,Varies,Y^,N,Varies,Y^,N,Varies
+Grain,Pasta,Varies,Y^,N,Varies,Y^,N,Varies
+Grain,Quinoa,-,Y,N,-,Y,N,-
+Grain,Rice Flour,-,Y,N,-,Y,N,-
+Grain,Rice-Brown,M,Y,N,Neg,Y,N,Neg
+Grain,Rice-White,VL,Y,N,Neg,Y,N,Neg
+Grain,Rye,VH,N,N,Neg,N,N,Neg
+Grain,Sorgum Flour,-,Y,N,-,Y,N,-
+Grain,Spelt,-,N,N,-,N,N,-
+Grain,Sprouted Grain Bread,-,N,N,-,N,N,-
+Grain,Tapioca,-,Y,N,-,Y,N,-
+Grain,Tapioca,-,Y,N,-,Y,N,-
+Grain,Triticale,-,N,N,-,N,N,-
+Grain,Wheat,VH,N,N,Neg,N,N,Neg
+Grain,Wheat Germ,-,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Almonds,VH,Y,Y,VH,Y,Y,VH
+"Legume, Nut, Seed",Bean Flour,Varies,Y,N,VL,Y,N,VL
+"Legume, Nut, Seed",Bean Sprouts,-,Y,N,L,Y,N,L
+"Legume, Nut, Seed",Black Beans,VH,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Black-eyed Peas,L,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Brazil Nuts,-,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Butter Beans,-,Y,N,-,Y,N,-
+"Legume, Nut, Seed",Canellini Beans,-,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Cashews,VH,Y,Y,L,Y,Y,L
+"Legume, Nut, Seed",Chestnut Flour,-,Y,N,-,Y,N,-
+"Legume, Nut, Seed",Chestnuts (canned),VL,Y,Y*,-,Y,Y*,-
+"Legume, Nut, Seed",Chick Peas,M,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Coconut,VL,Y,Y,M,Y,Y,M
+"Legume, Nut, Seed",Coconut Flour,-,Y,Y,-,Y,Y,-
+"Legume, Nut, Seed",Faba Beans,-,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Filberts (Hazelnuts),VH,Y,Y,L,Y,Y,L
+"Legume, Nut, Seed",Flax Seed,L,Y,Y,-,Y,Y,-
+"Legume, Nut, Seed",Garbanzo Beans,M,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Garfava Flour,-,Y,N,-,Y,N,-
+"Legume, Nut, Seed",Kidney Beans,H,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Lentils-Boiled,M,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Macadamia Nuts,VH,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Miso,-,Y,N,-,Y,N,-
+"Legume, Nut, Seed",Mung Bean Sprouts,L,Y,N,L,Y,N,L
+"Legume, Nut, Seed",Mung Beans,M,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Navy Beans,VH,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Pea Flour,-,Y,N,-,Y,N,-
+"Legume, Nut, Seed",Peanuts,VH,Y,Y,VH,Y,Y,VH
+"Legume, Nut, Seed",Peanut Butter,VH,Y,Y*,M,Y,Y*,M
+"Legume, Nut, Seed",Peas-Boiled,VL,Y,Y,L,Y,Y,L
+"Legume, Nut, Seed",Pecans,VH,Y,Y,L,Y,Y,L
+"Legume, Nut, Seed",Pine Nuts,VH,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Pinto Beans,H,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Pistachio Nuts,H,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Pumpkin Seeds,M,Y,Y,-,Y,Y,-
+"Legume, Nut, Seed",Seed Butters,Varies,Y,N*,Varies,Y,N*,Varies
+"Legume, Nut, Seed",Seed Flour,Varies,Y,N*,Varies,Y,N*,Varies
+"Legume, Nut, Seed",Sesame Seeds,VH,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Soy,VH,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Soybeans,VH,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Split Peas-Green,M,Y,Y,Neg,Y,Y,Neg
+"Legume, Nut, Seed",Split Peas-Yellow,L,Y,Y,L,Y,Y,L
+"Legume, Nut, Seed",Tahini,VH,Y,Y,H,Y,Y,H
+"Legume, Nut, Seed",Tofu,M,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Tofutti Cheese,-,Y,N,Neg,Y,N,Neg
+"Legume, Nut, Seed",Walnuts,VH,Y,N,H,Y,N,H
+Meat,Anchovies,-,Y,Y,-,Y,Y,-
+Meat,Bacon,Neg,Y^,Y*,-,Y^,Y*,-
+Meat,Beef,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Canned Fish,-,Y^,Y*,-,Y^,Y*,-
+Meat,Eggs,Neg,Y,N,Neg,Y,N,Neg
+Meat,Fish,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Ham,Neg,Y^,Y*,Neg,Y^,Y*,Neg
+Meat,Hot Dogs,-,Y^,N,-,Y^,N,-
+Meat,Lamb,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Meats,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Meats (Canned),-,Y^,N,-,Y^,N,-
+Meat,Meats (Processed),-,Y,N,-,Y,N,-
+Meat,Pork,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Poultry,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Sashimi,-,Y,Y,-,Y,Y,-
+Meat,Shellfish,Neg,Y,Y,Neg,Y,Y,Neg
+Meat,Smoked Meats,-,Y^,N*,-,Y^,N*,-
+Baking Ingredient,Apple Cider Vinegar,VL,Y,Y,-,Y,Y,-
+Baking Ingredient,Baker’s Yeast,M,Y,N,-,Y,N,-
+Baking Ingredient,Baking Powder,VL,Y,N,-,Y,N,-
+Baking Ingredient,Baking Soda,Neg,Y,Y,-,Y,Y,-
+Baking Ingredient,Chocolate,VH,Y,N,Neg,Y,N,Neg
+Baking Ingredient,Cocoa Powder,VH,Y,N,Neg,Y,N,Neg
+Baking Ingredient,Cream of Tartar,VL,Y,N,-,Y,N,-
+Baking Ingredient,Gelatin (unflavored),VL,Y,Y,-,Y,Y,-
+Baking Ingredient,Guar Gum,-,Y,N,-,Y,N,-
+Baking Ingredient,Vinegar,L,Y^,Y*,-,Y^,Y*,-
+Baking Ingredient,Xanthan Gum,-,Y,N,-,Y,N,-
+Condiment,Apple Cider Vinegar,VL,Y,Y,-,Y,Y,-
+Condiment,Horseradish Sauce,-,Y^,Y*,M,Y^,Y*,M
+Condiment,Ketchup,VL,Y^,Y*,VH,Y^,Y*,VH
+Condiment,Mayonnaise,L,Y^,Y*,-,Y^,Y*,-
+Condiment,Soy Sauce,-,Y^,N,Neg,Y^,N,Neg
+Condiment,Tabasco Sauce,-,Y^,Y*,-,Y^,Y*,-
+Condiment,Tamari,-,Y^,N,Neg,Y^,N,Neg
+Sweetener,Aspartame,VL,Y,Y,-,Y,Y,-
+Sweetener,Corn Syrup,VL,Y,N,-,Y,N,-
+Sweetener,Cyclamate,-,Y,Y,-,Y,Y,-
+Sweetener,Date Sugar,H,Y,N,VH,Y,N,VH
+Sweetener,Evaporated Cane Juice,VL,Y,N,L,Y,N,L
+Sweetener,Glycerin,-,Y,Y,-,Y,Y,-
+Sweetener,Glycerol,-,Y,Y,-,Y,Y,-
+Sweetener,Granulated Glucose,-,Y,N,-,Y,N,-
+Sweetener,Honey,VL,Y,Y,VH,Y,Y,VH
+Sweetener,Isoglucose,-,N,N,-,N,N,-
+Sweetener,Malitol,-,Y,N,-,Y,N,-
+Sweetener,Mannitol,-,Y,N,-,Y,N,-
+Sweetener,Maple Syrup,VL,Y,N,Neg,Y,N,Neg
+Sweetener,Molasses,-,Y,N,M,Y,N,M
+Sweetener,Saccharine,VL,Y,Y,-,Y,Y,-
+Sweetener,Sorbitol,-,Y,N,-,Y,N,-
+Sweetener,Splenda,VL,Y,N,-,Y,N,-
+Sweetener,Stevia,VH,Y,Y,-,Y,Y,-
+Sweetener,Succanat,-,Y,N,-,Y,N,-
+Sweetener,Sucralose,VL,Y,N,-,Y,N,-
+Sweetener,Sugar,VL,Y,N,Neg,Y,N,Neg
+Sweetener,Tagatose,-,Y,N,-,Y,N,-
+Sweetener,Turbinado Sugar,VL,Y,N,L,Y,N,L
+Sweetener,Xylitol,-,Y,N,-,Y,N,-
+Supplement,Aloe Vera Juice,VL,Y,N,-,Y,N,-
+Supplement,Chlorella,-,Y,N,-,Y,N,-
+Supplement,Echinacea,VL,Y,Y,-,Y,Y,-
+Supplement,Flaxseed Oil,-,Y,Y,-,Y,Y,-
+Supplement,Milk Thistle,VH,Y,Y,-,Y,Y,-
+Supplement,Spirulina,VL,Y,N,-,Y,N,-
+Supplement,Yellow Dock,H,Y,N,-,Y,N,-
+Vegetable,Acorn Squash,VL,Y,Y,-,Y,Y,-
+Vegetable,Artichokes (French),M,Y,Y,H,Y,Y,H
+Vegetable,Asparagus,L,Y,Y,M,Y,Y,M
+Vegetable,Bamboo Shoots,-,Y,N,Neg,Y,N,Neg
+Vegetable,Beets,VH,Y,Y,M,Y,Y,M
+Vegetable,Bhindi,-,Y,N,-,Y,N,-
+Vegetable,Bitter Gourd,-,Y,N,-,Y,N,-
+Vegetable,Black Radish,-,Y,Y,-,Y,Y,-
+Vegetable,Bok Choy,VL,Y,Y,-,Y,Y,-
+Vegetable,Broccoli Tips-Boiled,L,Y,Y,H,Y,Y,H
+Vegetable,Broccoli-Boiled,L,Y,Y,H,Y,Y,H
+Vegetable,Broccoli-Raw,M,Y,Y,H,Y,Y,H
+Vegetable,Broccoli-Steamed,H,Y,Y,H,Y,Y,H
+Vegetable,Brussel’s Sprouts-Boiled,L,Y,Y,L,Y,Y,L
+Vegetable,Brussel’s Sprouts-Raw,M,Y,Y,L,Y,Y,L
+Vegetable,Brussel’s Sprouts-Steamed,H,Y,Y,L,Y,Y,L
+Vegetable,Burdock Root,-,Y,N,-,Y,N,-
+Vegetable,Butternut Squash,-,Y,Y,-,Y,Y,-
+Vegetable,Cabbage-Green-Boiled,L,Y,Y,L,Y,Y,L
+Vegetable,Cabbage-Green-Raw,L,Y,Y,L,Y,Y,L
+Vegetable,Cabbage-Green-Steamed,M,Y,Y,L,Y,Y,L
+Vegetable,Cabbage-Red,-,Y,Y,Neg,Y,Y,Neg
+Vegetable,Canned Vegetables,Varies,Y^,N,Varies,Y^,N,Varies
+Vegetable,Carrots-Boiled,M,Y,Y,H,Y,Y,H
+Vegetable,Carrots-Raw,VH,Y,Y,H,Y,Y,H
+Vegetable,Carrots-Steamed,VH,Y,Y,H,Y,Y,H
+Vegetable,Cauliflower-Boiled,VL,Y,Y,M,Y,Y,M
+Vegetable,Cauliflower-Raw,L,Y,Y,M,Y,Y,M
+Vegetable,Cauliflower-Steamed,L,Y,Y,M,Y,Y,M
+Vegetable,Celeriac-Fresh,-,Y,Y,-,Y,Y,-
+Vegetable,Celeriac (Canned),M,Y,N,-,Y,N,-
+Vegetable,Celery-Raw,VH,Y,Y,Neg,Y,Y,Neg
+Vegetable,Chard,VH,Y,Y,-,Y,Y,-
+Vegetable,Chickory Root,-,Y,N,VH,Y,N,VH
+Vegetable,Chili Peppers,H,Y,Y,H,Y,Y,H
+Vegetable,Collard Greens-Boiled,M,Y,Y,-,Y,Y,-
+Vegetable,Collard Greens-Raw,L,Y,Y,-,Y,Y,-
+Vegetable,Collard Greens-Steamed,H,Y,Y,-,Y,Y,-
+Vegetable,Courgette (Zucchini),VL,Y,Y,H,Y,Y,H
+Vegetable,Cucumbers,VL,Y,Y,H,Y,Y,H
+Vegetable,Dandelion Greens,H,Y,Y,-,Y,Y,-
+Vegetable,Eggplant,M,Y,Y,H,Y,Y,H
+Vegetable,Garlic,-,Y,Y,L,Y,Y,L
+Vegetable,Green Beans,VL,Y,Y,M,Y,Y,M
+Vegetable,Haricot Beans,-,Y,Y,M,Y,Y,M
+Vegetable,Jaggery (Gur),-,Y,N,-,Y,N,-
+Vegetable,Jalapenos,-,Y,Y,VH,Y,Y,VH
+Vegetable,Kale,-,Y,Y,-,Y,Y,-
+Vegetable,Kimchi,-,Y,Y,-,Y,Y,-
+Vegetable,Kudzu (Kuzu),-,Y,N,-,Y,N,-
+Vegetable,Leek,M,Y,Y,Neg,Y,Y,Neg
+Vegetable,Lettuce,VL,Y,Y,Neg,Y,Y,Neg
+Vegetable,Mushrooms,VL,Y,Y,M,Y,Y,M
+Vegetable,Okra,VH,Y,N,H,Y,N,H
+Vegetable,"Olives, Green",VH,Y,Y,H,Y,Y,H
+Vegetable,"Olives, Black",VH,Y,Y,M,Y,Y,M
+Vegetable,Onions,L,Y,Y,L,Y,Y,L
+Vegetable,Parsnips,-,Y,N,H,Y,N,H
+Vegetable,Peppers-Green,M,Y,Y,VH,Y,Y,VH
+Vegetable,Peppers-Red,VL,Y,Y,H,Y,Y,H
+Vegetable,Pickles (Dill),VL,Y^,Y*,VH,Y^,Y*,VH
+Vegetable,Potatoes-Red-Peeled,M,Y,N,-,Y,N,-
+Vegetable,Potatoes-Peeled,VH,Y,N,Neg,Y,N,Neg
+Vegetable,Potatoes-Unpeeled,VH,Y,N,M,Y,N,M
+Vegetable,Pumpkin-Canned,VL,Y,N,M,Y,N,M
+Vegetable,Pumpkin-Raw,Neg,Y,Y,M,Y,Y,M
+Vegetable,Radishes-Red,Neg,Y,Y,VH,Y,Y,VH
+Vegetable,Radishes-White,VL,Y,Y,VH,Y,Y,VH
+Vegetable,Rhubarb,VH,Y,Y,-,Y,Y,-
+Vegetable,Rutabaga,-,Y,Y,-,Y,Y,-
+Vegetable,Sauerkraut,M,Y,Y,-,Y,Y,-
+Vegetable,Seaweed,M,Y,Y,-,Y,Y,-
+Vegetable,Sorrel,H,Y,Y,-,Y,Y,-
+Vegetable,Spaghetti Squash,-,Y,Y,-,Y,Y,-
+Vegetable,Spinach-Fresh,VH,Y,Y,H,Y,Y,H
+Vegetable,Spinach-Frozen,VH,Y,Y,M,Y,Y,M
+Vegetable,String Beans,M,Y,Y,L,Y,Y,L
+Vegetable,Sweet Potatoes,VH,Y,N,H,Y,N,H
+Vegetable,Taro,-,Y,N,-,Y,N,-
+Vegetable,Tomato Paste-Canned,H,Y,N,VH,Y,N,VH
+Vegetable,Tomato Puree-Canned,H,Y,N,VH,Y,N,VH
+Vegetable,Tomato Sauce-Canned,H,Y,N,VH,Y,N,VH
+Vegetable,Tomatoes-Fresh,M,Y,Y,M,Y,Y,M
+Vegetable,Turnips,VL,Y,N,Neg,Y,N,Neg
+Vegetable,Water Chestnuts,VL,Y,N,VH,Y,N,VH
+Vegetable,Watercress,Neg,Y,Y,H,Y,Y,H
+Vegetable,Yams,-,Y,N,-,Y,N,-
+Vegetable,Yucca Root,-,Y,N,-,Y,N,-
+Vegetable,Zucchini,VL,Y,Y,VH,Y,Y,VH
