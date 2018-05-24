@@ -94,25 +94,31 @@ let fodmapValues: [String: FodmapStatus] = [
     "Y^" : .yes,
 ]
 
+enum CSVFields: Int {
+    case category = 0
+    case name = 1
+    case oxalateContent = 2
+    case gfcfStatus = 3
+    case scdStatus = 4
+    case salicylateContent = 5
+    case paleoStatus = 6
+    case fodmapStatus = 7
+    case amineContent = 8
+}
 
 func loadFoodItemData() -> [FoodItem] {
-    var foodItems = [FoodItem]()
-
     let parsedCSVRows = try! linesFromResource(fileName: "FoodTracker.csv")
-    for row in parsedCSVRows {
-        let foodItem = FoodItem(name: row[1],
-                                category: categoryValues[row[0]] ?? .all,
-                                oxalateContent: oxalateValues[row[2]] ?? .unknown,
-                                salicylateContent: salicylateValues[row[5]] ?? .unknown,
-                                amineContent: amineValues[row[8]] ?? .unknown,
-                                gfcfStatus: gfcfValues[row[3]] ?? .yes,
-                                scdStatus: scdValues[row[4]] ?? .yes,
-                                paleoStatus: paleoValues[row[6]] ?? .yes,
-                                fodmapStatus: fodmapValues[row[7]] ?? .yes)
-        foodItems.append(foodItem)
-    }
     
-    return foodItems
+    return parsedCSVRows.map { row in
+        FoodItem(name: row[CSVFields.name.rawValue],
+                 category: categoryValues[row[CSVFields.category.rawValue]] ?? .all,
+                 oxalateContent: oxalateValues[row[CSVFields.oxalateContent.rawValue]] ?? .unknown,
+                 salicylateContent: salicylateValues[row[CSVFields.salicylateContent.rawValue]] ?? .unknown,
+                 amineContent: amineValues[row[CSVFields.amineContent.rawValue]] ?? .unknown,
+                 gfcfStatus: gfcfValues[row[CSVFields.gfcfStatus.rawValue]] ?? .yes,
+                 scdStatus: scdValues[row[CSVFields.scdStatus.rawValue]] ?? .yes,
+                 paleoStatus: paleoValues[row[CSVFields.paleoStatus.rawValue]] ?? .yes,
+                 fodmapStatus: fodmapValues[row[CSVFields.fodmapStatus.rawValue]] ?? .yes) }
 }
 
 func linesFromResource(fileName: String) throws -> [[String]] {
