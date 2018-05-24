@@ -98,30 +98,18 @@ let fodmapValues: [String: FodmapStatus] = [
 func loadFoodItemData() -> [FoodItem] {
     var foodItems = [FoodItem]()
 
-    let parsedCSV = try! linesFromResource(fileName: "FoodTracker.csv")
-    for row in parsedCSV {
-        if row.count > 1 {
-            let category = categoryValues[row[0]] ?? .all
-            let name = row[1]
-            let oxalateContent = oxalateValues[row[2]] ?? .unknown
-            let gfcfStatus = gfcfValues[row[3]] ?? .yes
-            let scdStatus = scdValues[row[4]] ?? .yes
-            let salicylateContent = salicylateValues[row[5]] ?? .unknown
-            let paleoStatus = paleoValues[row[6]] ?? .yes
-            let fodmapStatus = fodmapValues[row[7]] ?? .yes
-            let amineContent = amineValues[row[8]] ?? .unknown
-            
-            let foodItem = FoodItem(name: name,
-                                    category: category,
-                                    oxalateContent: oxalateContent,
-                                    salicylateContent: salicylateContent,
-                                    amineContent: amineContent,
-                                    gfcfStatus: gfcfStatus,
-                                    scdStatus: scdStatus,
-                                    paleoStatus: paleoStatus,
-                                    fodmapStatus: fodmapStatus)
-            foodItems.append(foodItem)
-        }
+    let parsedCSVRows = try! linesFromResource(fileName: "FoodTracker.csv")
+    for row in parsedCSVRows {
+        let foodItem = FoodItem(name: row[1],
+                                category: categoryValues[row[0]] ?? .all,
+                                oxalateContent: oxalateValues[row[2]] ?? .unknown,
+                                salicylateContent: salicylateValues[row[5]] ?? .unknown,
+                                amineContent: amineValues[row[8]] ?? .unknown,
+                                gfcfStatus: gfcfValues[row[3]] ?? .yes,
+                                scdStatus: scdValues[row[4]] ?? .yes,
+                                paleoStatus: paleoValues[row[6]] ?? .yes,
+                                fodmapStatus: fodmapValues[row[7]] ?? .yes)
+        foodItems.append(foodItem)
     }
     
     return foodItems
