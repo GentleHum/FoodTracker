@@ -12,7 +12,7 @@ extension UITableView {
     func scrollToTop(ofSection section: Int) {
         DispatchQueue.main.async {
             if self.numberOfRows(inSection: section) > 0 {
-                self.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+                self.scrollToRow(at: IndexPath(row: 0, section: section), at: .top, animated: true)
             }
         }
     }
