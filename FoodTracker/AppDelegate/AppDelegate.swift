@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         window.makeKeyAndVisible()
         
+        foodItems = loadFoodItemData()  // zap
         initializeRealm()
 
         appRouter = AppRouter(window: window)
