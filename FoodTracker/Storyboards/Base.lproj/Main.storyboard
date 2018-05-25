@@ -714,7 +714,7 @@
         <scene sceneID="pOz-ao-Vsi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mLN-Ij-HJ2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Foods" id="Upt-73-Jxk">
+                    <tabBarItem key="tabBarItem" title="Foods" image="foods-tabbar" id="Upt-73-Jxk">
                         <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -736,7 +736,7 @@
         <scene sceneID="pML-6W-7pY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UW7-n7-6Qm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Diets" id="Ukc-Jp-NPi"/>
+                    <tabBarItem key="tabBarItem" title="Diets" image="diets-tabbar" id="Ukc-Jp-NPi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BTk-ab-V72">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -754,7 +754,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="diets-tabbar" width="30" height="30"/>
         <image name="food-healthy-vegetables-264537" width="300" height="225"/>
+        <image name="foods-tabbar" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nqc-1z-dyt"/>
