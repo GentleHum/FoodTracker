@@ -104,7 +104,7 @@ import RealmSwift
 
 extension FoodItem {
     
-    static func allAsArray(in realm: Realm = try! Realm()) -> [FoodItem] {
+    static func allAsArray(in realm: Realm) -> [FoodItem] {
         var returnArray = [FoodItem]()
         
         for foodItem in FoodItem.all(in: realm) {
@@ -114,19 +114,19 @@ extension FoodItem {
         return returnArray
     }
     
-    static func all(in realm: Realm = try! Realm()) -> Results<FoodItem> {
+    static func all(in realm: Realm) -> Results<FoodItem> {
         return realm.objects(FoodItem.self)
             .sorted(byKeyPath: FoodItem.Property.name.rawValue)
     }
     
-    @discardableResult
-    static func add(text: String, in realm: Realm = try! Realm()) -> FoodItem {
-        let item = FoodItem()
-        try! realm.write {
-            realm.add(item)
-        }
-        return item
-    }
+//    @discardableResult
+//    static func add(text: String, in realm: Realm) -> FoodItem {
+//        let item = FoodItem()
+//        try! realm.write {
+//            realm.add(item)
+//        }
+//        return item
+//    }
  
     func delete() {
         guard let realm = realm else { return }
