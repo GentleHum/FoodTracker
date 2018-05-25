@@ -19,9 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-Up-OkT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-Up-OkT">
                                 <rect key="frame" x="0.0" y="294" width="375" height="324"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -218,17 +219,17 @@
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8n0-Wb-28P">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1"/>
                                 <color key="backgroundColor" white="0.726318359375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="TcQ-fE-BIq"/>
+                                    <constraint firstAttribute="height" constant="1" id="TcQ-fE-BIq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-tl-Ro7">
-                                <rect key="frame" x="0.0" y="292" width="375" height="2"/>
+                                <rect key="frame" x="0.0" y="293" width="375" height="1"/>
                                 <color key="backgroundColor" white="0.7263183594" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="yv7-uc-1OY"/>
+                                    <constraint firstAttribute="height" constant="1" id="yv7-uc-1OY"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -416,9 +417,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-Sn-DOV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-Sn-DOV">
                                 <rect key="frame" x="0.0" y="256" width="375" height="362"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -658,6 +660,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buj-Pw-aQn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.7263183594" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="a6Q-GT-4rW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-7q-2ht">
+                                <rect key="frame" x="0.0" y="255" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.7263183594" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dTk-IN-pCZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.87806919640000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -667,15 +683,21 @@
                             <constraint firstItem="SpF-dX-qjw" firstAttribute="top" secondItem="Bcn-f1-yzi" secondAttribute="bottom" constant="12" id="8RZ-ol-jW5"/>
                             <constraint firstItem="MWc-Fe-wqb" firstAttribute="trailing" secondItem="8c7-gO-zGy" secondAttribute="trailing" constant="8" id="8tt-LG-17h"/>
                             <constraint firstItem="8c7-gO-zGy" firstAttribute="top" secondItem="70Z-1b-cKr" secondAttribute="bottom" constant="8" id="93i-ws-Gij"/>
+                            <constraint firstItem="nPt-7q-2ht" firstAttribute="leading" secondItem="Eka-ke-sHF" secondAttribute="leading" id="GNZ-vz-mhH"/>
                             <constraint firstItem="8KH-Sn-DOV" firstAttribute="trailing" secondItem="MWc-Fe-wqb" secondAttribute="trailing" id="JJF-0Y-Cc8"/>
+                            <constraint firstItem="buj-Pw-aQn" firstAttribute="top" secondItem="MWc-Fe-wqb" secondAttribute="top" id="Ktf-hF-xqQ"/>
                             <constraint firstItem="jEC-eh-PkN" firstAttribute="top" secondItem="MWc-Fe-wqb" secondAttribute="top" constant="8" id="LrZ-UC-pY4"/>
                             <constraint firstItem="MWc-Fe-wqb" firstAttribute="trailing" secondItem="jEC-eh-PkN" secondAttribute="trailing" constant="10" id="MFy-Df-9eY"/>
                             <constraint firstItem="70Z-1b-cKr" firstAttribute="top" secondItem="jEC-eh-PkN" secondAttribute="bottom" constant="14" id="Ots-h2-pdI"/>
                             <constraint firstItem="70Z-1b-cKr" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" constant="8" id="Pd9-pX-wmb"/>
                             <constraint firstItem="8KH-Sn-DOV" firstAttribute="top" secondItem="Bcn-f1-yzi" secondAttribute="bottom" constant="54" id="PjS-Qh-g52"/>
+                            <constraint firstItem="MWc-Fe-wqb" firstAttribute="trailing" secondItem="nPt-7q-2ht" secondAttribute="trailing" id="SbM-tx-7BP"/>
+                            <constraint firstItem="8KH-Sn-DOV" firstAttribute="top" secondItem="nPt-7q-2ht" secondAttribute="bottom" id="W5X-JN-kVq"/>
                             <constraint firstItem="8KH-Sn-DOV" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" id="Xhi-aO-fhD"/>
                             <constraint firstItem="Bcn-f1-yzi" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" constant="8" id="Z2b-wF-QUe"/>
                             <constraint firstItem="8KH-Sn-DOV" firstAttribute="bottom" secondItem="MWc-Fe-wqb" secondAttribute="bottom" id="ZLu-3P-Dh6"/>
+                            <constraint firstItem="buj-Pw-aQn" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" id="hgh-lf-x9F"/>
+                            <constraint firstItem="buj-Pw-aQn" firstAttribute="trailing" secondItem="MWc-Fe-wqb" secondAttribute="trailing" id="rYh-Qa-OH5"/>
                             <constraint firstItem="SpF-dX-qjw" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" constant="8" id="s3d-O9-eYI"/>
                             <constraint firstItem="MWc-Fe-wqb" firstAttribute="trailing" secondItem="Bcn-f1-yzi" secondAttribute="trailing" constant="8" id="toL-HD-Jup"/>
                             <constraint firstItem="8c7-gO-zGy" firstAttribute="leading" secondItem="MWc-Fe-wqb" secondAttribute="leading" constant="8" id="vfh-4B-5jt"/>
