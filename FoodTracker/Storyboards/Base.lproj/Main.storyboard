@@ -217,6 +217,20 @@
                                     <action selector="criteriaControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZNW-Vs-oYC"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8n0-Wb-28P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                                <color key="backgroundColor" white="0.726318359375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="TcQ-fE-BIq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-tl-Ro7">
+                                <rect key="frame" x="0.0" y="292" width="375" height="2"/>
+                                <color key="backgroundColor" white="0.7263183594" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="yv7-uc-1OY"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.87806919640000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -231,6 +245,8 @@
                             <constraint firstItem="Zud-t6-A6x" firstAttribute="top" secondItem="Kov-3b-21t" secondAttribute="bottom" constant="12" id="9vz-x2-KNI"/>
                             <constraint firstItem="Zud-t6-A6x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="DGd-PX-0Q6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vdq-cu-BMk" secondAttribute="trailing" constant="8" id="Dpt-ZZ-Iht"/>
+                            <constraint firstItem="8n0-Wb-28P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gpx-Cm-HjE"/>
+                            <constraint firstItem="lQq-Up-OkT" firstAttribute="top" secondItem="T8h-tl-Ro7" secondAttribute="bottom" id="IKt-KQ-etc"/>
                             <constraint firstItem="CGQ-ZK-DEw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Ic6-MC-FCS"/>
                             <constraint firstItem="uPm-l9-sIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="MTd-yo-hZT"/>
                             <constraint firstItem="BSZ-hS-Gw6" firstAttribute="top" secondItem="CGQ-ZK-DEw" secondAttribute="bottom" id="Nbn-Ib-XBV"/>
@@ -246,11 +262,15 @@
                             <constraint firstItem="vzB-Ty-V1J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="lNG-OK-We9"/>
                             <constraint firstItem="lQq-Up-OkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nT0-FM-CHL"/>
                             <constraint firstItem="dF6-3F-OLm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="nmL-B7-Gbd"/>
+                            <constraint firstItem="8n0-Wb-28P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rOI-nj-2eH"/>
+                            <constraint firstItem="8n0-Wb-28P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rT5-YP-kiW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CGQ-ZK-DEw" secondAttribute="trailing" id="rgb-Eb-SHR"/>
                             <constraint firstItem="Vdq-cu-BMk" firstAttribute="top" secondItem="vzB-Ty-V1J" secondAttribute="bottom" id="sP9-oW-UOF"/>
+                            <constraint firstAttribute="trailing" secondItem="T8h-tl-Ro7" secondAttribute="trailing" id="vax-18-TGb"/>
                             <constraint firstItem="vzB-Ty-V1J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-8" id="vhQ-Tw-Mdm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zud-t6-A6x" secondAttribute="trailing" constant="8" id="xpn-BJ-A3B"/>
                             <constraint firstItem="lQq-Up-OkT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zXI-D5-uxY"/>
+                            <constraint firstItem="T8h-tl-Ro7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zvE-0Y-m8Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -694,10 +714,10 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" white="0.2712131076388889" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -715,7 +735,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mLN-Ij-HJ2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Foods" image="foods-tabbar" id="Upt-73-Jxk">
-                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cTH-Fe-d75">
