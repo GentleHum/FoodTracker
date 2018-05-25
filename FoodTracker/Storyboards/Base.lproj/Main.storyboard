@@ -395,6 +395,7 @@
                     </view>
                     <connections>
                         <outlet property="amineValueLabel" destination="GWs-og-YrR" id="bo8-A6-gKD"/>
+                        <outlet property="categoryImageView" destination="cD9-Ty-sMD" id="dsZ-ID-ePR"/>
                         <outlet property="categoryLabel" destination="Ja4-2v-QSd" id="ZwS-FR-hF7"/>
                         <outlet property="fodmapValueLabel" destination="opI-ch-b1M" id="MFh-wa-U40"/>
                         <outlet property="gfcfValueLabel" destination="uW2-vh-6Lg" id="qq1-Tp-itf"/>
