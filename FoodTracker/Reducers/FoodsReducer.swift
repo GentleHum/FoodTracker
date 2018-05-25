@@ -13,7 +13,7 @@ import ReSwift
 func foodsReducer(action: Action, state: FoodsState?) -> FoodsState {
     var state = state ?? FoodsState()
     
-    state.foodItems = FoodItem.allAsArray(in: foodItemRealm)
+    state.foodItems = FoodItem.allAsArray()
     
     switch action {
     case let selectItemAction as SelectFoodItemAction:

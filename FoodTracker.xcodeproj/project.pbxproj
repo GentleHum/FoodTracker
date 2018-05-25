@@ -13,6 +13,7 @@
 		E017A5F420B6461E00AB5700 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A5F320B6461E00AB5700 /* Util.swift */; };
 		E017A60B20B7145300AB5700 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A60A20B7145300AB5700 /* CSwiftV.swift */; };
 		E017A60F20B7170900AB5700 /* FoodTracker.csv in Resources */ = {isa = PBXBuildFile; fileRef = E017A60E20B7170900AB5700 /* FoodTracker.csv */; };
+		E017A61120B7A1B100AB5700 /* Realms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017A61020B7A1B100AB5700 /* Realms.swift */; };
 		E017B0EC20B3B918007749BC /* DietFoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */; };
 		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
 		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
@@ -73,6 +74,7 @@
 		E017A60920B7144900AB5700 /* CSwiftV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSwiftV.h; sourceTree = "<group>"; };
 		E017A60A20B7145300AB5700 /* CSwiftV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSwiftV.swift; sourceTree = "<group>"; };
 		E017A60E20B7170900AB5700 /* FoodTracker.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FoodTracker.csv; sourceTree = "<group>"; };
+		E017A61020B7A1B100AB5700 /* Realms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realms.swift; sourceTree = "<group>"; };
 		E017B0EB20B3B918007749BC /* DietFoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		E01D588D20A9F88A002A6D6C /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
 		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				E01D588D20A9F88A002A6D6C /* Persistor.swift */,
+				E017A61020B7A1B100AB5700 /* Realms.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				E07D507A209F817300FB9624 /* SCDStatus.swift in Sources */,
 				E07D5074209A283000FB9624 /* FoodsReducer.swift in Sources */,
 				E04178462097812400C2B17B /* CollectionDataSource.swift in Sources */,
+				E017A61120B7A1B100AB5700 /* Realms.swift in Sources */,
 				E0417810209758BE00C2B17B /* FoodCompoundSearchViewController.swift in Sources */,
 				E0C0074620AC6F7500BC330E /* FoodItemTableViewCell.swift in Sources */,
 				E017A60B20B7145300AB5700 /* CSwiftV.swift in Sources */,

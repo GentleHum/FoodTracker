@@ -8,6 +8,7 @@
 
 import RealmSwift
 
+
 @objcMembers class FoodItem: Object {
     enum Property: String {
         case id, name, category, oxalateContent, salicylateContent, amineContent, gfcfStatus, scdStatus, paleoStatus, fodmapStatus
@@ -104,7 +105,7 @@ import RealmSwift
 
 extension FoodItem {
     
-    static func allAsArray(in realm: Realm) -> [FoodItem] {
+    static func allAsArray(in realm: Realm = applicationFoodItemRealm) -> [FoodItem] {
         var returnArray = [FoodItem]()
         
         for foodItem in FoodItem.all(in: realm) {

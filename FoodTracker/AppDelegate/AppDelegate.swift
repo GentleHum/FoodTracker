@@ -10,7 +10,7 @@ import ReSwift
 import RealmSwift
 
 var store = Store<AppState>(reducer: appReducer, state: nil)
-var foodItemRealm: Realm = try! Realm()
+var applicationFoodItemRealm = try! Realm()
 
 
 @UIApplicationMain
@@ -36,17 +36,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let libraryURL = try! Path.inLibrary("FoodItem.realm")
         let libraryConfiguration = Realm.Configuration(fileURL: libraryURL)
 
-        foodItemRealm = try! Realm(configuration: libraryConfiguration)
+        applicationFoodItemRealm = try! Realm(configuration: libraryConfiguration)
         
         print("libraryURL: \(libraryURL)")  // zap
 //        let fileURL = realm.configuration.fileURL ?? URL(fileURLWithPath: "file:///default.realm")
 //        print("fileURL: \(fileURL)")  // zap
         
-        guard foodItemRealm.isEmpty else { return }
+        guard applicationFoodItemRealm.isEmpty else { return }
         
-        try! foodItemRealm.write {
+        try! applicationFoodItemRealm.write {
             for foodItem in foodItems {
-                foodItemRealm.add(foodItem)
+                applicationFoodItemRealm.add(foodItem)
             }
         }
     }
