@@ -96,7 +96,3 @@ extension FoodItemDetailViewController: StoreSubscriber {
 
 
 
-// MARK: - Table View Delegate
-extension FoodItemDetailViewController: UITableViewDelegate {
-}
-
