@@ -1,5 +1,5 @@
 //
-//  Realms.swift
+//  RealmProvider.swift
 //  FoodTracker
 //
 //  Created by Michael Vork on 5/24/18.
@@ -8,6 +8,6 @@
 
 import RealmSwift
 
-struct Realms {
+struct RealmProvider {
     var foodItemRealm: Realm
 }
