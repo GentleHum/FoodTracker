@@ -105,7 +105,7 @@ import RealmSwift
 
 extension FoodItem {
     
-    static func allAsArray(in realm: Realm = applicationFoodItemRealm) -> [FoodItem] {
+    static func allAsArray(in realm: Realm) -> [FoodItem] {
         var returnArray = [FoodItem]()
         
         for foodItem in FoodItem.all(in: realm) {
