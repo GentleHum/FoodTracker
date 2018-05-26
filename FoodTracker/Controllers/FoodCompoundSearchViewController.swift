@@ -70,7 +70,8 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
         tableView.delegate = self
         tableView.tableFooterView = UIView()   // eliminate blank cells at bottom of table
         
-
+        nameTextField.delegate = self
+        
         self.title = Storyboard.title
     }
     
