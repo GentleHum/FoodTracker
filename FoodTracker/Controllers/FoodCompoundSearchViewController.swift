@@ -33,11 +33,11 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
-        dispatchSearchCriteriaActions()
+        searchCriteriaDidChange()
     }
     
     @IBAction func criteriaControlDidChange(_ sender: UISegmentedControl) {
-        dispatchSearchCriteriaActions()
+        searchCriteriaDidChange()
     }
     
     @IBAction func helpButtonClicked(_ sender: UIBarButtonItem) {
@@ -45,7 +45,7 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
         helpViewController.title = Storyboard.helpTitle
     }
     
-    private func dispatchSearchCriteriaActions() {
+    override func dispatchSearchCriteriaActions() {
         let action = UpdateSearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
                                                 salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
                                                 amineContent: amineValues[amineControl.selectedSegmentIndex],
@@ -86,7 +86,6 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     override func newState(state: FoodsState) {
         super.newState(state: state)
         
-        tableView.reloadData()
-        tableView.scrollToTop(ofSection: 0)  // scroll to top AFTER table is reloaded
+        reloadAndScroll(tableView) 
     }
 }

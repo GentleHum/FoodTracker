@@ -8,10 +8,11 @@
 
 import ReSwift
 
-class FoodItemSearchViewController: UIViewController, StoreSubscriber {
+class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableViewDelegate, UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
     
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
+    var scrollToTop = false
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -46,16 +47,30 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber {
         return viewController
     }
     
+    func reloadAndScroll(_ tableView: UITableView) {
+        tableView.reloadData()
+        if scrollToTop {
+            tableView.scrollToTop(ofSection: 0)
+            scrollToTop = false
+        }
+    }
+
+    // should be overridden
+    func dispatchSearchCriteriaActions() {
+    }
+    
+    func searchCriteriaDidChange() {
+        scrollToTop = true
+        dispatchSearchCriteriaActions()
+    }
+
     
     // MARK: - Store Subscriber
     func newState(state: FoodsState) {
         tableDataSource?.models = state.matchingItems
     }
-}
-
-
-// MARK: - Table View Delegate
-extension FoodItemSearchViewController: UITableViewDelegate {
+    
+    // MARK: - Table View Delegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(60.0)
     }
@@ -72,18 +87,15 @@ extension FoodItemSearchViewController: UITableViewDelegate {
         }
         
     }
-}
-
-// MARK: - Table View Delegate
-extension FoodItemSearchViewController: UITextFieldDelegate {
+    
+    
+    // MARK: - Text Field Delegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
-}
-
-// MARK: Popover Presentation Controller Delegate
-extension FoodItemSearchViewController: UIPopoverPresentationControllerDelegate {
+    
+    // MARK: Popover Presentation Controller Delegate
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .fullScreen
     }
@@ -102,3 +114,7 @@ extension FoodItemSearchViewController: UIPopoverPresentationControllerDelegate 
         self.dismiss(animated: true, completion: nil)
     }
 }
+
+
+
+
