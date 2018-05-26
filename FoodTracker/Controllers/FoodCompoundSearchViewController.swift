@@ -12,6 +12,8 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     private struct Storyboard {
         static let cellIdentifier = "FoodItemCell"
         static let title = "Foods"
+        static let helpViewController = "HelpViewController"
+        static let helpTitle = "Foods Help"
     }
     
     let oxalateValues: [OxalateContent] =
@@ -36,6 +38,11 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     
     @IBAction func criteriaControlDidChange(_ sender: UISegmentedControl) {
         dispatchSearchCriteriaActions()
+    }
+    
+    @IBAction func helpButtonClicked(_ sender: UIBarButtonItem) {
+        let helpViewController = showHelpViewController(forSender: sender, withIdentifier: Storyboard.helpViewController)
+        helpViewController.title = Storyboard.helpTitle
     }
     
     private func dispatchSearchCriteriaActions() {

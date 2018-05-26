@@ -278,6 +278,9 @@
                     <navigationItem key="navigationItem" id="Hd6-ng-eeo">
                         <barButtonItem key="rightBarButtonItem" title="Help" id="Ckg-pD-KT0">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="helpButtonClicked:" destination="BYZ-38-t0r" id="jib-Hu-Xgj"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -409,6 +412,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4C-s2-pkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2309.5999999999999" y="321.58920539730138"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="wYC-hc-rR3">
+            <objects>
+                <viewController storyboardIdentifier="HelpViewController" id="4se-yn-kKR" customClass="HelpViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ynk-ox-B6t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FZD-Zg-pcX">
+                                <rect key="frame" x="8" y="28" width="359" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4HN-II-hjh" firstAttribute="bottom" secondItem="FZD-Zg-pcX" secondAttribute="bottom" id="07G-bF-oM2"/>
+                            <constraint firstItem="FZD-Zg-pcX" firstAttribute="leading" secondItem="4HN-II-hjh" secondAttribute="leading" constant="8" id="2h6-18-ebT"/>
+                            <constraint firstItem="FZD-Zg-pcX" firstAttribute="top" secondItem="4HN-II-hjh" secondAttribute="top" constant="8" id="kgg-UE-uhO"/>
+                            <constraint firstItem="4HN-II-hjh" firstAttribute="trailing" secondItem="FZD-Zg-pcX" secondAttribute="trailing" constant="8" id="r00-eD-WnQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4HN-II-hjh"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="FZD-Zg-pcX" id="QBD-5S-c5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXM-RW-Iys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="-354"/>
         </scene>
         <!--Diet Search View Controller-->
         <scene sceneID="YS4-aq-qk5">
@@ -709,6 +745,9 @@
                     <navigationItem key="navigationItem" id="cVq-JO-JcG">
                         <barButtonItem key="rightBarButtonItem" title="Help" id="gmW-z0-Vx2">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="helpButtonClicked:" destination="Hrz-Y9-RBh" id="Zln-hP-YAz"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -802,6 +841,6 @@
         <image name="foods-tabbar" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nqc-1z-dyt"/>
+        <segue reference="Pr2-Li-3eh"/>
     </inferredMetricsTieBreakers>
 </document>

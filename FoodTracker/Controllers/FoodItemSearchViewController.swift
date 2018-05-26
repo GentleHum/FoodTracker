@@ -34,6 +34,20 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    func showHelpViewController(forSender sender: UIBarButtonItem, withIdentifier identifier: String) -> UIViewController {
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
+        viewController.modalPresentationStyle = .popover
+        let popover: UIPopoverPresentationController = viewController.popoverPresentationController!
+        popover.barButtonItem = sender
+        popover.delegate = self
+        present(viewController, animated: true, completion: nil)
+        
+        return viewController
+    }
+    
+    
+    // MARK: - Store Subscriber
     func newState(state: FoodsState) {
         tableDataSource?.models = state.matchingItems
     }
@@ -65,5 +79,26 @@ extension FoodItemSearchViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+}
+
+// MARK: Popover Presentation Controller Delegate
+extension FoodItemSearchViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .fullScreen
+    }
+    
+    func presentationController(_ controller: UIPresentationController,
+                                viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController? {
+        let navigationController = UINavigationController(rootViewController: controller.presentedViewController)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self,
+                                         action: #selector(FoodItemSearchViewController.dismissViewController))
+        doneButton.tintColor = .darkGray
+        navigationController.topViewController?.navigationItem.rightBarButtonItem = doneButton
+        return navigationController
+    }
+    
+    @objc func dismissViewController() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

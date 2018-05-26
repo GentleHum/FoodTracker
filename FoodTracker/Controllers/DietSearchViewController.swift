@@ -12,6 +12,8 @@ final class DietSearchViewController: FoodItemSearchViewController {
     private struct Storyboard {
         static let cellIdentifier = "DietFoodItemCell"
         static let title = "Diets"
+        static let helpViewController = "HelpViewController"
+        static let helpTitle = "Diets Help"
     }
     
     let gfcfValues: [GFCFStatus] = [ .all, .yes, .no ]
@@ -37,6 +39,12 @@ final class DietSearchViewController: FoodItemSearchViewController {
     @IBAction func criteriaControlDidChange(_ sender: UISegmentedControl) {
         dispatchSearchCriteriaActions()
     }
+    
+    @IBAction func helpButtonClicked(_ sender: UIBarButtonItem) {
+        let helpViewController = showHelpViewController(forSender: sender, withIdentifier: Storyboard.helpViewController)
+        helpViewController.title = Storyboard.helpTitle
+    }
+
     
     private func dispatchSearchCriteriaActions() {
         let action = UpdateSearchCriteriaAction(gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
