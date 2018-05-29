@@ -8,9 +8,10 @@
 
 import ReSwift
 
-class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableViewDelegate, UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
+class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableViewDelegate,
+                                    UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
-    
+
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
     var scrollToTop = false
 
@@ -42,7 +43,7 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableVi
         let popover: UIPopoverPresentationController = viewController.popoverPresentationController!
         popover.barButtonItem = sender
         popover.delegate = self
-        present(viewController, animated: true, completion: nil)
+        self.present(viewController, animated: true, completion: nil)
         
         return viewController
     }

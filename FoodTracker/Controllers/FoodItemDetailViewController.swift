@@ -49,8 +49,7 @@ final class FoodItemDetailViewController: UIViewController {
     @IBOutlet weak var fodmapValueLabel: UILabel!
     @IBOutlet weak var categoryImageView: UIImageView!
 
-
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         store.subscribe(self) {
@@ -80,6 +79,7 @@ extension FoodItemDetailViewController: StoreSubscriber {
         nameLabel.text = state.selectedItem.name
         categoryImageView.image =
             FoodItemDetailViewController.getCategoryImage(forCategory: state.selectedItem.category)
+
         categoryLabel.text = state.selectedItem.category.description()
         oxalateValueLabel.text = "Oxalate: " + state.selectedItem.oxalateContent.description()
         salicylateValueLabel.text = "Salicylate: " + state.selectedItem.salicylateContent.description()

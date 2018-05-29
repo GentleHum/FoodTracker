@@ -18,6 +18,7 @@
 		E01D588E20A9F88A002A6D6C /* Persistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01D588D20A9F88A002A6D6C /* Persistor.swift */; };
 		E022025420AA2D8C002C0A60 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = E022025320AA2D8C002C0A60 /* Path.swift */; };
 		E03758A820B9A69800C1D09B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03758A720B9A69800C1D09B /* HelpViewController.swift */; };
+		E03758AA20BDFDEA00C1D09B /* FoodItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03758A920BDFDEA00C1D09B /* FoodItemImageView.swift */; };
 		E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780D209758BE00C2B17B /* AppDelegate.swift */; };
 		E0417810209758BE00C2B17B /* FoodCompoundSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041780F209758BE00C2B17B /* FoodCompoundSearchViewController.swift */; };
 		E0417813209758BE00C2B17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0417811209758BE00C2B17B /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		E01D588D20A9F88A002A6D6C /* Persistor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistor.swift; sourceTree = "<group>"; };
 		E022025320AA2D8C002C0A60 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		E03758A720B9A69800C1D09B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		E03758A920BDFDEA00C1D09B /* FoodItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemImageView.swift; sourceTree = "<group>"; };
 		E041780A209758BE00C2B17B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E041780D209758BE00C2B17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E041780F209758BE00C2B17B /* FoodCompoundSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCompoundSearchViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		E041782E2097590700C2B17B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E03758A920BDFDEA00C1D09B /* FoodItemImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				E07D5070209A13CE00FB9624 /* FoodCategory.swift in Sources */,
 				E041783C2097694600C2B17B /* AppRouter.swift in Sources */,
 				E07D5072209A266600FB9624 /* FoodsState.swift in Sources */,
+				E03758AA20BDFDEA00C1D09B /* FoodItemImageView.swift in Sources */,
 				E017A5F420B6461E00AB5700 /* Util.swift in Sources */,
 				E041780E209758BE00C2B17B /* AppDelegate.swift in Sources */,
 				E017A5F120B6290B00AB5700 /* FoodItemSearchViewController.swift in Sources */,
