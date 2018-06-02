@@ -18,14 +18,14 @@ struct UpdateSearchCriteriaAction: Action {
     let paleoStatus: PaleoStatus
     let fodmapStatus: FodmapStatus
 
-    let foodCategory: FoodCategory
+    let foodCategory: [FoodCategory]
     let foodName: String
 
     init(oxalateContent: OxalateContent = .all, salicylateContent: SalicylateContent = .all,
          amineContent: AmineContent = .all,
          gfcfStatus: GFCFStatus = .all, scdStatus: SCDStatus = .all,
          paleoStatus: PaleoStatus = .all, fodmapStatus: FodmapStatus = .all,
-         foodCategory: FoodCategory = .all,
+         foodCategory: [FoodCategory] = [],
          foodName: String = "") {
         self.oxalateContent = oxalateContent
         self.salicylateContent = salicylateContent

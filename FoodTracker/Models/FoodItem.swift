@@ -10,6 +10,11 @@ import RealmSwift
 
 
 @objcMembers class FoodItem: Object {
+    
+    static func apply(_ criteria: [FoodCategory], to items: [FoodItem]) -> [FoodItem] {
+        return criteria.count <= 0 ? items : items.filter { $0.category.inList(criteria) }
+    }
+    
     enum Property: String {
         case id, name, category, oxalateContent, salicylateContent, amineContent, gfcfStatus, scdStatus, paleoStatus, fodmapStatus
     }
@@ -120,14 +125,6 @@ extension FoodItem {
             .sorted(byKeyPath: FoodItem.Property.name.rawValue)
     }
     
-//    @discardableResult
-//    static func add(text: String, in realm: Realm) -> FoodItem {
-//        let item = FoodItem()
-//        try! realm.write {
-//            realm.add(item)
-//        }
-//        return item
-//    }
  
     func delete() {
         guard let realm = realm else { return }

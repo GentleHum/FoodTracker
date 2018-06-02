@@ -11,9 +11,22 @@ import ReSwift
 class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableViewDelegate,
                                     UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
+    let categoryDisplayValues: [FoodCategory] =
+        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
 
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
     var scrollToTop = false
+
+    
+    internal func getCategoryValues(from indexes: IndexSet) -> [FoodCategory] {
+        var categoryValues: [FoodCategory] = []
+        
+        for index in indexes {
+            categoryValues.append(categoryDisplayValues[index])
+        }
+        
+        return categoryValues
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,6 +36,8 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableVi
             }
         }
     }
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

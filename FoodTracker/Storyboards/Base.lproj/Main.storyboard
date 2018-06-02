@@ -90,7 +90,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-3b-21t">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-3b-21t" customClass="MultiSelectSegmentedControl">
                                 <rect key="frame" x="8" y="220" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="xEp-9o-qwz"/>
@@ -533,7 +533,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-f1-yzi">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-f1-yzi" customClass="MultiSelectSegmentedControl">
                                 <rect key="frame" x="8" y="182" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="y1m-hk-TS3"/>
@@ -620,7 +620,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-gO-zGy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-gO-zGy">
                                 <rect key="frame" x="8" y="166" width="359" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="G8v-IP-sMR"/>
@@ -849,6 +849,6 @@
         <image name="foods-tabbar" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pr2-Li-3eh"/>
+        <segue reference="nqc-1z-dyt"/>
     </inferredMetricsTieBreakers>
 </document>

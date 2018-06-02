@@ -18,14 +18,14 @@ struct SearchCriteriaState: StateType {
     var paleoStatus: PaleoStatus
     var fodmapStatus: FodmapStatus
 
-    var foodCategory: FoodCategory
+    var foodCategory: [FoodCategory]
     var foodName: String
     
     init(oxalateContent: OxalateContent = .all, salicylateContent: SalicylateContent = .all,
          amineContent: AmineContent = .all,
          gfcfStatus: GFCFStatus = .all, scdStatus: SCDStatus = .all,
          paleoStatus: PaleoStatus = .all, fodmapStatus: FodmapStatus = .all,
-         foodCategory: FoodCategory = .all,
+         foodCategory: [FoodCategory] = [],
          foodName: String = "") {
         self.oxalateContent = oxalateContent
         self.salicylateContent = salicylateContent
@@ -50,7 +50,7 @@ struct SearchCriteriaState: StateType {
         filteredItems = paleoStatus.apply(to: filteredItems)
         filteredItems = fodmapStatus.apply(to: filteredItems)
         
-        filteredItems = foodCategory.apply(to: filteredItems)
+        filteredItems = FoodItem.apply(foodCategory, to: filteredItems)
 
         if !self.foodName.isEmpty {
             filteredItems = filteredItems.filter { $0.name.uppercased().contains(self.foodName.uppercased()) }

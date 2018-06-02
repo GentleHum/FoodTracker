@@ -33,6 +33,16 @@ enum FoodCategory: String {
         return self.rawValue == FoodCategory.all.rawValue ? foodItems :
             foodItems.filter{ $0.category.rawValue == self.rawValue }
     }
+    
+    func inList(_ categories: [FoodCategory]) -> Bool {
+        for category in categories {
+            if self.rawValue == category.rawValue {
+                return true
+            }
+        }
+        
+        return false
+    }
 }
 
 

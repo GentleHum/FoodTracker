@@ -7,6 +7,7 @@
 //
 
 import ReSwift
+import MultiSelectSegmentedControl
 
 final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     private struct Storyboard {
@@ -29,7 +30,7 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     @IBOutlet weak var oxalateContentControl: UISegmentedControl!
     @IBOutlet weak var amineControl: UISegmentedControl!
     @IBOutlet weak var salicylateContentControl: UISegmentedControl!
-    @IBOutlet weak var categoryControl: UISegmentedControl!
+    @IBOutlet weak var categoryControl: MultiSelectSegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
@@ -46,11 +47,13 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
     }
     
     override func dispatchSearchCriteriaActions() {
-        let action = UpdateSearchCriteriaAction(oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
-                                                salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
-                                                amineContent: amineValues[amineControl.selectedSegmentIndex],
-                                                foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
-                                                foodName: nameTextField.text ?? "")
+        let action =
+            UpdateSearchCriteriaAction(
+                oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
+                salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
+                amineContent: amineValues[amineControl.selectedSegmentIndex],
+                foodCategory: getCategoryValues(from: categoryControl.selectedSegmentIndexes),
+                foodName: nameTextField.text ?? "")
         store.dispatch(action)
         store.dispatch(applySearchCriteria)
     }

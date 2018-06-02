@@ -7,6 +7,7 @@
 //
 
 import ReSwift
+import MultiSelectSegmentedControl
 
 final class DietSearchViewController: FoodItemSearchViewController {
     private struct Storyboard {
@@ -20,8 +21,6 @@ final class DietSearchViewController: FoodItemSearchViewController {
     let scdValues: [SCDStatus] = [ .all, .yes, .no ]
     let paleoValues: [PaleoStatus] = [ .all, .yes, .no ]
     let fodmapValues: [FodmapStatus] = [ .all, .yes, .no ]
-    let categoryValues: [FoodCategory] =
-        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
     
     // MARK: - outlets
     @IBOutlet weak var tableView: UITableView!
@@ -29,7 +28,7 @@ final class DietSearchViewController: FoodItemSearchViewController {
     @IBOutlet weak var scdControl: UISegmentedControl!
     @IBOutlet weak var paleoControl: UISegmentedControl!
     @IBOutlet weak var fodmapControl: UISegmentedControl!
-    @IBOutlet weak var categoryControl: UISegmentedControl!
+    @IBOutlet weak var categoryControl: MultiSelectSegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
@@ -45,14 +44,16 @@ final class DietSearchViewController: FoodItemSearchViewController {
         helpViewController.title = Storyboard.helpTitle
     }
 
-    
+
     override func dispatchSearchCriteriaActions() {
-        let action = UpdateSearchCriteriaAction(gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
-                                                scdStatus: scdValues[scdControl.selectedSegmentIndex],
-                                                paleoStatus: paleoValues[paleoControl.selectedSegmentIndex],
-                                                fodmapStatus: fodmapValues[fodmapControl.selectedSegmentIndex],
-                                                foodCategory: categoryValues[categoryControl.selectedSegmentIndex],
-                                                foodName: nameTextField.text ?? "")
+        let action =
+            UpdateSearchCriteriaAction(
+                gfcfStatus: gfcfValues[gfcfControl.selectedSegmentIndex],
+                scdStatus: scdValues[scdControl.selectedSegmentIndex],
+                paleoStatus: paleoValues[paleoControl.selectedSegmentIndex],
+                fodmapStatus: fodmapValues[fodmapControl.selectedSegmentIndex],
+                foodCategory: getCategoryValues(from: categoryControl.selectedSegmentIndexes),
+                foodName: nameTextField.text ?? "")
         store.dispatch(action)
         store.dispatch(applySearchCriteria)
     }
