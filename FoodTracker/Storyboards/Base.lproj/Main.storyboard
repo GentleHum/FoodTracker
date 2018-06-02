@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="20" id="xEp-9o-qwz"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="All"/>
+                                    <segment title="Supp."/>
                                     <segment title="Veg."/>
                                     <segment title="Grain"/>
                                     <segment title="Meat"/>
@@ -539,7 +539,7 @@
                                     <constraint firstAttribute="height" constant="20" id="y1m-hk-TS3"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="All"/>
+                                    <segment title="Supp."/>
                                     <segment title="Veg."/>
                                     <segment title="Grain"/>
                                     <segment title="Meat"/>
@@ -849,6 +849,6 @@
         <image name="foods-tabbar" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nqc-1z-dyt"/>
+        <segue reference="Pr2-Li-3eh"/>
     </inferredMetricsTieBreakers>
 </document>

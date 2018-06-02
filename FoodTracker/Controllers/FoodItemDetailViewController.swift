@@ -75,7 +75,6 @@ final class FoodItemDetailViewController: UIViewController {
 // MARK: - StoreSubscriber
 extension FoodItemDetailViewController: StoreSubscriber {
     func newState(state: FoodsState) {
-        print("+++++++++++FoodItemDetailViewController: newState")  // zap
         nameLabel.text = state.selectedItem.name
         categoryImageView.image =
             FoodItemDetailViewController.getCategoryImage(forCategory: state.selectedItem.category)

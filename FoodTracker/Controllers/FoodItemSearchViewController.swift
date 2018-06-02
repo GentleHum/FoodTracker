@@ -12,20 +12,14 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableVi
                                     UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
     let cellColors = [ .white, UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 0.1) ]
     let categoryDisplayValues: [FoodCategory] =
-        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
+        [.supplement, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
 
     var tableDataSource: TableDataSource<UITableViewCell, FoodItem>?
     var scrollToTop = false
 
     
     internal func getCategoryValues(from indexes: IndexSet) -> [FoodCategory] {
-        var categoryValues: [FoodCategory] = []
-        
-        for index in indexes {
-            categoryValues.append(categoryDisplayValues[index])
-        }
-        
-        return categoryValues
+        return indexes.map { categoryDisplayValues[$0] }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -96,7 +90,6 @@ class FoodItemSearchViewController: UIViewController, StoreSubscriber, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected row: \(indexPath.row)")  // zap
         store.dispatch(RoutingAction(destination: .foodItemDetail))
         if let foodItem = tableDataSource?.models[indexPath.row] {
             store.dispatch(SelectFoodItemAction(foodItem: foodItem))
