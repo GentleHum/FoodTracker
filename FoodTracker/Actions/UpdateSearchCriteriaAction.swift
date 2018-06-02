@@ -9,9 +9,9 @@
 import ReSwift
 
 struct UpdateSearchCriteriaAction: Action {
-    let oxalateContent: OxalateContent
-    let salicylateContent: SalicylateContent
-    let amineContent: AmineContent
+    let oxalateContent: [OxalateContent]
+    let salicylateContent: [SalicylateContent]
+    let amineContent: [AmineContent]
 
     let gfcfStatus: GFCFStatus
     let scdStatus: SCDStatus
@@ -21,8 +21,9 @@ struct UpdateSearchCriteriaAction: Action {
     let foodCategory: [FoodCategory]
     let foodName: String
 
-    init(oxalateContent: OxalateContent = .all, salicylateContent: SalicylateContent = .all,
-         amineContent: AmineContent = .all,
+    init(oxalateContent: [OxalateContent] = [],
+         salicylateContent: [SalicylateContent] = [],
+         amineContent: [AmineContent] = [],
          gfcfStatus: GFCFStatus = .all, scdStatus: SCDStatus = .all,
          paleoStatus: PaleoStatus = .all, fodmapStatus: FodmapStatus = .all,
          foodCategory: [FoodCategory] = [],

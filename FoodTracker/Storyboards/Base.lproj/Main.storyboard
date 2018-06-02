@@ -110,13 +110,13 @@
                                     <action selector="criteriaControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zuq-Go-SqW"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6OO-rE-efg">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6OO-rE-efg" customClass="MultiSelectSegmentedControl">
                                 <rect key="frame" x="8" y="88" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Rlz-oC-Rdh"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="All"/>
+                                    <segment title="Var"/>
                                     <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
@@ -124,20 +124,19 @@
                                     <segment title="Mod"/>
                                     <segment title="H"/>
                                     <segment title="VH"/>
-                                    <segment title="Var"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="criteriaControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="qiW-Ho-xSf"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BSZ-hS-Gw6">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BSZ-hS-Gw6" customClass="MultiSelectSegmentedControl">
                                 <rect key="frame" x="8" y="132" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Muk-Xw-3QM"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="All"/>
+                                    <segment title="Var"/>
                                     <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
@@ -145,14 +144,13 @@
                                     <segment title="Mod"/>
                                     <segment title="H"/>
                                     <segment title="VH"/>
-                                    <segment title="Var"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="criteriaControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ib1-Gu-sMZ"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oxalate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF6-3F-OLm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oxalates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF6-3F-OLm">
                                 <rect key="frame" x="8" y="72" width="359" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="Pg1-yB-Wt0"/>
@@ -161,7 +159,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salicylate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGQ-ZK-DEw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salicylates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGQ-ZK-DEw">
                                 <rect key="frame" x="8" y="116" width="367" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="Iil-UF-I1G"/>
@@ -170,7 +168,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPm-l9-sIP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPm-l9-sIP">
                                 <rect key="frame" x="8" y="204" width="359" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="E2R-SC-sjL"/>
@@ -188,7 +186,7 @@
                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="sM9-5q-KsQ"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amine:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzB-Ty-V1J">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzB-Ty-V1J">
                                 <rect key="frame" x="8" y="160" width="359" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="324-cp-54Z"/>
@@ -197,13 +195,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-cu-BMk">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-cu-BMk" customClass="MultiSelectSegmentedControl">
                                 <rect key="frame" x="8" y="176" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="BtJ-Om-5aV"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="All"/>
+                                    <segment title="Var"/>
                                     <segment title="Unknown"/>
                                     <segment title="Neg"/>
                                     <segment title="VL"/>
@@ -211,7 +209,6 @@
                                     <segment title="Mod"/>
                                     <segment title="H"/>
                                     <segment title="VH"/>
-                                    <segment title="Var"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -849,6 +846,6 @@
         <image name="foods-tabbar" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pr2-Li-3eh"/>
+        <segue reference="nqc-1z-dyt"/>
     </inferredMetricsTieBreakers>
 </document>

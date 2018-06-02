@@ -17,19 +17,17 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
         static let helpTitle = "Foods Help"
     }
     
-    let oxalateValues: [OxalateContent] =
-        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let salicylateValues: [SalicylateContent] =
-        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let amineValues: [AmineContent] =
-        [ .all, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh, .varies ]
-    let categoryValues: [FoodCategory] =
-        [.all, .vegetable, .grain, .meat, .fruit, .dairy, .beverage, .nut]
+    let oxalateDisplayValues: [OxalateContent] =
+        [ .varies, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh ]
+    let salicylateDisplayValues: [SalicylateContent] =
+        [ .varies, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh ]
+    let amineDisplayValues: [AmineContent] =
+        [ .varies, .unknown, .negligible, .veryLow, .low, .moderate, .high, .veryHigh ]
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var oxalateContentControl: UISegmentedControl!
-    @IBOutlet weak var amineControl: UISegmentedControl!
-    @IBOutlet weak var salicylateContentControl: UISegmentedControl!
+    @IBOutlet weak var oxalateContentControl: MultiSelectSegmentedControl!
+    @IBOutlet weak var amineControl: MultiSelectSegmentedControl!
+    @IBOutlet weak var salicylateContentControl: MultiSelectSegmentedControl!
     @IBOutlet weak var categoryControl: MultiSelectSegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -46,12 +44,24 @@ final class FoodCompoundSearchViewController: FoodItemSearchViewController {
         helpViewController.title = Storyboard.helpTitle
     }
     
+    private func getOxalateValues(from indexes: IndexSet) -> [OxalateContent] {
+        return indexes.map { oxalateDisplayValues[$0] }
+    }
+
+    private func getSalicylateValues(from indexes: IndexSet) -> [SalicylateContent] {
+        return indexes.map { salicylateDisplayValues[$0] }
+    }
+
+    private func getAmineValues(from indexes: IndexSet) -> [AmineContent] {
+        return indexes.map { amineDisplayValues[$0] }
+    }
+
     override func dispatchSearchCriteriaActions() {
         let action =
             UpdateSearchCriteriaAction(
-                oxalateContent: oxalateValues[oxalateContentControl.selectedSegmentIndex],
-                salicylateContent: salicylateValues[salicylateContentControl.selectedSegmentIndex],
-                amineContent: amineValues[amineControl.selectedSegmentIndex],
+                oxalateContent: getOxalateValues(from: oxalateContentControl.selectedSegmentIndexes),
+                salicylateContent: getSalicylateValues(from: salicylateContentControl.selectedSegmentIndexes),
+                amineContent: getAmineValues(from: amineControl.selectedSegmentIndexes),
                 foodCategory: getCategoryValues(from: categoryControl.selectedSegmentIndexes),
                 foodName: nameTextField.text ?? "")
         store.dispatch(action)

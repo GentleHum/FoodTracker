@@ -9,9 +9,9 @@
 import ReSwift
 
 struct SearchCriteriaState: StateType {
-    var oxalateContent: OxalateContent
-    var salicylateContent: SalicylateContent
-    var amineContent: AmineContent
+    var oxalateContent: [OxalateContent]
+    var salicylateContent: [SalicylateContent]
+    var amineContent: [AmineContent]
 
     var gfcfStatus: GFCFStatus
     var scdStatus: SCDStatus
@@ -21,8 +21,9 @@ struct SearchCriteriaState: StateType {
     var foodCategory: [FoodCategory]
     var foodName: String
     
-    init(oxalateContent: OxalateContent = .all, salicylateContent: SalicylateContent = .all,
-         amineContent: AmineContent = .all,
+    init(oxalateContent: [OxalateContent] = [],
+         salicylateContent: [SalicylateContent] = [],
+         amineContent: [AmineContent] = [],
          gfcfStatus: GFCFStatus = .all, scdStatus: SCDStatus = .all,
          paleoStatus: PaleoStatus = .all, fodmapStatus: FodmapStatus = .all,
          foodCategory: [FoodCategory] = [],
@@ -41,9 +42,10 @@ struct SearchCriteriaState: StateType {
     }
     
     func apply(to foodItems: [FoodItem]) -> [FoodItem] {
-        var filteredItems = oxalateContent.apply(to: foodItems)
-        filteredItems = salicylateContent.apply(to: filteredItems)
-        filteredItems = amineContent.apply(to: filteredItems)
+        var filteredItems = FoodItem.apply(oxalateContent, to: foodItems)
+
+        filteredItems = FoodItem.apply(salicylateContent, to: filteredItems)
+        filteredItems = FoodItem.apply(amineContent, to: filteredItems)
 
         filteredItems = gfcfStatus.apply(to: filteredItems)
         filteredItems = scdStatus.apply(to: filteredItems)

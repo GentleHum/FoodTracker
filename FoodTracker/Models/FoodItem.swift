@@ -15,6 +15,18 @@ import RealmSwift
         return criteria.count <= 0 ? items : items.filter { $0.category.inList(criteria) }
     }
     
+    static func apply(_ criteria: [OxalateContent], to items: [FoodItem]) -> [FoodItem] {
+        return criteria.count <= 0 ? items : items.filter { $0.oxalateContent.inList(criteria) }
+    }
+    
+    static func apply(_ criteria: [SalicylateContent], to items: [FoodItem]) -> [FoodItem] {
+        return criteria.count <= 0 ? items : items.filter { $0.salicylateContent.inList(criteria) }
+    }
+
+    static func apply(_ criteria: [AmineContent], to items: [FoodItem]) -> [FoodItem] {
+        return criteria.count <= 0 ? items : items.filter { $0.amineContent.inList(criteria) }
+    }
+
     enum Property: String {
         case id, name, category, oxalateContent, salicylateContent, amineContent, gfcfStatus, scdStatus, paleoStatus, fodmapStatus
     }
