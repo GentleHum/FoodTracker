@@ -27,4 +27,14 @@ enum SalicylateContent: String {
         return self.rawValue == SalicylateContent.all.rawValue ? foodItems :
             foodItems.filter{ $0.salicylateContent.rawValue == self.rawValue }
     }
+    
+    func inList(_ salicylates: [SalicylateContent]) -> Bool {
+        for salicylate in salicylates {
+            if self.rawValue == salicylate.rawValue {
+                return true
+            }
+        }
+        
+        return false
+    }
 }

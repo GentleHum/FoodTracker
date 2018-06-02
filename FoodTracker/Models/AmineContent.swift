@@ -27,4 +27,14 @@ enum AmineContent: String {
         return self.rawValue == AmineContent.all.rawValue ? foodItems :
             foodItems.filter{ $0.amineContent.rawValue == self.rawValue }
     }
+    
+    func inList(_ amines: [AmineContent]) -> Bool {
+        for amine in amines {
+            if self.rawValue == amine.rawValue {
+                return true
+            }
+        }
+        
+        return false
+    }
 }

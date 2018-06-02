@@ -27,4 +27,14 @@ enum OxalateContent: String {
         return self.rawValue == OxalateContent.all.rawValue ? foodItems :
             foodItems.filter{ $0.oxalateContent.rawValue == self.rawValue }
     }
+    
+    func inList(_ oxalates: [OxalateContent]) -> Bool {
+        for oxalate in oxalates {
+            if self.rawValue == oxalate.rawValue {
+                return true
+            }
+        }
+        
+        return false
+    }
 }
